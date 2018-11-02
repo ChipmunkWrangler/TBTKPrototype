@@ -4613,6 +4613,34 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 181332475}
   m_CullTransparentMesh: 0
+--- !u!1 &184405054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 184405055}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184405055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184405054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &185351347
 GameObject:
   m_ObjectHideFlags: 0
@@ -11870,7 +11898,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1012801600}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99999964
+  m_Size: 0.9999996
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -35185,8 +35213,8 @@ MonoBehaviour:
     name: Player1
     color: {r: 1, g: 0.5294118, b: 0.5294118, a: 1}
     startingUnitList:
-    - {fileID: 11445536, guid: a40cc5d55d9dcb64ea04dc6a1b318bd2, type: 2}
-    - {fileID: 11400000, guid: 6dcbc074dc251864eb9733f676af35db, type: 2}
+    - {fileID: 11400000, guid: c2ed86348f6687942a9efc756728bd72, type: 2}
+    - {fileID: 11400000, guid: cd371da9d8d9da04ab38bde341107ae5, type: 2}
     - {fileID: 11400000, guid: 537a2b3652b2cb34faca747e1ce67af6, type: 2}
     deployableTileList:
     - {fileID: 1517959473}
@@ -35221,9 +35249,9 @@ MonoBehaviour:
     name: Player2
     color: {r: 0.9947262, g: 1, b: 0.61764705, a: 1}
     startingUnitList:
-    - {fileID: 11400000, guid: c2ed86348f6687942a9efc756728bd72, type: 2}
-    - {fileID: 11414596, guid: f02e658ab59da3e43bb0ad230f98667d, type: 2}
-    - {fileID: 11463732, guid: 510a5538c8412d248bf477b2132d3271, type: 2}
+    - {fileID: 11445536, guid: a40cc5d55d9dcb64ea04dc6a1b318bd2, type: 2}
+    - {fileID: 11400000, guid: 79254b2a3e4b8f9438bd70c9fcef8da8, type: 2}
+    - {fileID: 11400000, guid: 6dcbc074dc251864eb9733f676af35db, type: 2}
     deployableTileList:
     - {fileID: 87281641}
     - {fileID: 1357611180}
@@ -37785,7 +37813,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 4.9999237}
+  m_AnchoredPosition: {x: 0, y: 5.000023}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1940814953
