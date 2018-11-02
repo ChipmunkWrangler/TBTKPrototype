@@ -145,7 +145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 4.999939}
+  m_AnchoredPosition: {x: 0, y: 5}
   m_SizeDelta: {x: 80, y: 5}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2578610
@@ -11318,7 +11318,7 @@ MonoBehaviour:
   enableFlanking: 0
   flankingAngle: 120
   flankingBonus: 0.5
-  enableActionCam: 0
+  enableActionCam: 1
   actionCamFreqAttack: 0.25
   actionCamFreqAbility: 0.5
   nextScene: DemoCampaign
@@ -11349,7 +11349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af85dcd1646ec141aec2b69e0e8db2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turnMode: 0
+  turnMode: 2
   moveOrder: 0
 --- !u!1 &539002334
 GameObject:
@@ -11870,7 +11870,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1012801600}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999996
+  m_Size: 0.99999964
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12655,7 +12655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 90, y: 4.999939}
+  m_AnchoredPosition: {x: 90, y: 5}
   m_SizeDelta: {x: -180, y: 10}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &598586999
@@ -16408,7 +16408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10, y: -9.999939}
+  m_AnchoredPosition: {x: -10, y: -10}
   m_SizeDelta: {x: 35, y: 35}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &795883457
@@ -37785,7 +37785,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 4.999954}
+  m_AnchoredPosition: {x: 0, y: 4.9999237}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1940814953
