@@ -34688,11 +34688,11 @@ MonoBehaviour:
     aiMode: 0
     abilityInfo:
       factionID: -1
-      energyFull: 150
+      energyFull: 5
       energy: 0
-      energyGainPerTurn: 20
-      availableIDList: 0500000006000000
-      unavailableIDList: 0300000007000000
+      energyGainPerTurn: 5
+      availableIDList: 0f000000
+      unavailableIDList: 03000000050000000600000007000000
       abilityList: []
   - ID: 1
     name: Player2
@@ -34724,10 +34724,10 @@ MonoBehaviour:
     aiMode: 0
     abilityInfo:
       factionID: -1
-      energyFull: 100
+      energyFull: 5
       energy: 0
-      energyGainPerTurn: 20
-      availableIDList: 08000000
+      energyGainPerTurn: 5
+      availableIDList: 0f000000
       unavailableIDList: 03000000050000000600000007000000
       abilityList: []
   selectedUnitID: -1
