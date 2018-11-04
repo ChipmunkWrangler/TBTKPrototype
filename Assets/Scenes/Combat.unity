@@ -2253,199 +2253,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 82745884}
   m_CullTransparentMesh: 0
---- !u!1 &87281639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 87281640}
-  - component: {fileID: 87281643}
-  - component: {fileID: 87281642}
-  - component: {fileID: 87281641}
-  m_Layer: 28
-  m_Name: Tile_2x0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &87281640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87281639}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2, y: 0, z: -3}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &87281641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87281639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 8
-  type: 1
-  walkable: 1
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: 1
-  x: 2
-  y: 0
-  z: 0
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &87281642
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87281639}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &87281643
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 87281639}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &92435675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,7 +2605,7 @@ MonoBehaviour:
   gridColliderType: 0
   enableDiagonalNeighbour: 0
   width: 3
-  length: 4
+  length: 3
   tileSize: 2
   gridToTileRatio: 1
   unwalkableRate: 0
@@ -2842,23 +2649,20 @@ MonoBehaviour:
     initiated: 1
     type: 1
     width: 3
-    length: 4
+    length: 3
     tileSize: 2
     gridToTileRatio: 1
-    gridObj: {fileID: 1506277294}
+    gridObj: {fileID: 2116161880}
     tileList:
-    - {fileID: 730171224}
-    - {fileID: 669498834}
-    - {fileID: 233299053}
-    - {fileID: 132038111}
-    - {fileID: 1357611180}
-    - {fileID: 1262236383}
-    - {fileID: 333658641}
-    - {fileID: 244006193}
-    - {fileID: 87281641}
-    - {fileID: 741250341}
-    - {fileID: 1449747332}
-    - {fileID: 1517959473}
+    - {fileID: 1687488473}
+    - {fileID: 1622906983}
+    - {fileID: 939485966}
+    - {fileID: 420509628}
+    - {fileID: 308463886}
+    - {fileID: 1352726114}
+    - {fileID: 909319772}
+    - {fileID: 773111233}
+    - {fileID: 879680975}
   tile1: {fileID: 0}
   tile2: {fileID: 0}
 --- !u!1 &107623647
@@ -3225,199 +3029,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 131002436}
   m_CullTransparentMesh: 0
---- !u!1 &132038109
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 132038110}
-  - component: {fileID: 132038113}
-  - component: {fileID: 132038112}
-  - component: {fileID: 132038111}
-  m_Layer: 28
-  m_Name: Tile_0x3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &132038110
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 132038109}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2, y: 0, z: 3}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &132038111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 132038109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 3
-  type: 1
-  walkable: 1
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: 0
-  x: 0
-  y: 0
-  z: 3
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &132038112
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 132038109}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &132038113
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 132038109}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &133433832
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,199 +4931,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 229358633}
   m_CullTransparentMesh: 0
---- !u!1 &233299051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 233299052}
-  - component: {fileID: 233299055}
-  - component: {fileID: 233299054}
-  - component: {fileID: 233299053}
-  m_Layer: 28
-  m_Name: Tile_0x2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &233299052
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 233299051}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2, y: 0, z: 1}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &233299053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 233299051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 2
-  type: 1
-  walkable: 0
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: -1
-  x: 0
-  y: 0
-  z: 2
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &233299054
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 233299051}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &233299055
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 233299051}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &233394931
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,199 +5448,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 240159937}
   m_CullTransparentMesh: 0
---- !u!1 &244006191
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 244006192}
-  - component: {fileID: 244006195}
-  - component: {fileID: 244006194}
-  - component: {fileID: 244006193}
-  m_Layer: 28
-  m_Name: Tile_1x3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &244006192
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244006191}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 3}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &244006193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244006191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 7
-  type: 1
-  walkable: 1
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: 0
-  x: 1
-  y: 0
-  z: 3
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &244006194
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244006191}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &244006195
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 244006191}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &250924423
 GameObject:
   m_ObjectHideFlags: 0
@@ -7113,6 +6338,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 307451378}
   m_CullTransparentMesh: 0
+--- !u!1 &308463884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 308463885}
+  - component: {fileID: 308463888}
+  - component: {fileID: 308463887}
+  - component: {fileID: 308463886}
+  m_Layer: 28
+  m_Name: Tile_1x1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &308463885
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308463884}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &308463886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308463884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 4
+  type: 1
+  walkable: 0
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: -1
+  x: 1
+  y: 0
+  z: 1
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &308463887
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308463884}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &308463888
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308463884}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &314946647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7470,199 +6888,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 332079003}
   m_CullTransparentMesh: 0
---- !u!1 &333658639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 333658640}
-  - component: {fileID: 333658643}
-  - component: {fileID: 333658642}
-  - component: {fileID: 333658641}
-  m_Layer: 28
-  m_Name: Tile_1x2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &333658640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 333658639}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &333658641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 333658639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 6
-  type: 1
-  walkable: 0
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: -1
-  x: 1
-  y: 0
-  z: 2
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &333658642
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 333658639}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &333658643
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 333658639}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &339463047
 GameObject:
   m_ObjectHideFlags: 0
@@ -9158,6 +8383,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 420065355}
   m_CullTransparentMesh: 0
+--- !u!1 &420509626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420509627}
+  - component: {fileID: 420509630}
+  - component: {fileID: 420509629}
+  - component: {fileID: 420509628}
+  m_Layer: 28
+  m_Name: Tile_1x0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420509627
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420509626}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &420509628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420509626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 3
+  type: 1
+  walkable: 1
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: 1
+  x: 1
+  y: 0
+  z: 0
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &420509629
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420509626}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &420509630
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 420509626}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &427390067
 GameObject:
   m_ObjectHideFlags: 0
@@ -10070,7 +9488,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 482142783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -42}
+  m_LocalPosition: {x: 0, y: 0, z: -22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 540552867}
@@ -11897,8 +11315,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1012801601}
   m_HandleRect: {fileID: 1012801600}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.9999994
+  m_Value: 1
+  m_Size: 0.9999997
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13782,199 +13200,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 662009102}
   m_CullTransparentMesh: 0
---- !u!1 &669498832
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 669498833}
-  - component: {fileID: 669498836}
-  - component: {fileID: 669498835}
-  - component: {fileID: 669498834}
-  m_Layer: 28
-  m_Name: Tile_0x1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &669498833
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 669498832}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2, y: 0, z: -1}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &669498834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 669498832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 1
-  type: 1
-  walkable: 0
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: -1
-  x: 0
-  y: 0
-  z: 1
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &669498835
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 669498832}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &669498836
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 669498832}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &673841828
 GameObject:
   m_ObjectHideFlags: 0
@@ -14925,392 +14150,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 724650683}
   m_CullTransparentMesh: 0
---- !u!1 &730171222
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 730171223}
-  - component: {fileID: 730171226}
-  - component: {fileID: 730171225}
-  - component: {fileID: 730171224}
-  m_Layer: 28
-  m_Name: Tile_0x0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &730171223
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730171222}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2, y: 0, z: -3}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &730171224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730171222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
-  type: 1
-  walkable: 1
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: 1
-  x: 0
-  y: 0
-  z: 0
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &730171225
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730171222}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &730171226
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730171222}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
---- !u!1 &741250339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 741250340}
-  - component: {fileID: 741250343}
-  - component: {fileID: 741250342}
-  - component: {fileID: 741250341}
-  m_Layer: 28
-  m_Name: Tile_2x1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &741250340
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 741250339}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2, y: 0, z: -1}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &741250341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 741250339}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 9
-  type: 1
-  walkable: 0
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: -1
-  x: 2
-  y: 0
-  z: 1
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &741250342
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 741250339}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &741250343
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 741250339}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &746420937
 GameObject:
   m_ObjectHideFlags: 0
@@ -16015,6 +14854,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 771646101}
   m_CullTransparentMesh: 0
+--- !u!1 &773111231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 773111232}
+  - component: {fileID: 773111235}
+  - component: {fileID: 773111234}
+  - component: {fileID: 773111233}
+  m_Layer: 28
+  m_Name: Tile_2x1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &773111232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773111231}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &773111233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773111231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 7
+  type: 1
+  walkable: 0
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: -1
+  x: 2
+  y: 0
+  z: 1
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &773111234
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773111231}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &773111235
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 773111231}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &782007306
 GameObject:
   m_ObjectHideFlags: 0
@@ -18405,6 +17437,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871401282}
   m_CullTransparentMesh: 0
+--- !u!1 &879680973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879680974}
+  - component: {fileID: 879680977}
+  - component: {fileID: 879680976}
+  - component: {fileID: 879680975}
+  m_Layer: 28
+  m_Name: Tile_2x2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &879680974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879680973}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2, y: 0, z: 2}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &879680975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879680973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 8
+  type: 1
+  walkable: 1
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: 0
+  x: 2
+  y: 0
+  z: 2
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &879680976
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879680973}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &879680977
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 879680973}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &887160410
 GameObject:
   m_ObjectHideFlags: 0
@@ -19034,6 +18259,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 907896637}
   m_CullTransparentMesh: 0
+--- !u!1 &909319770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 909319771}
+  - component: {fileID: 909319774}
+  - component: {fileID: 909319773}
+  - component: {fileID: 909319772}
+  m_Layer: 28
+  m_Name: Tile_2x0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &909319771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909319770}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2, y: 0, z: -2}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909319772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909319770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 6
+  type: 1
+  walkable: 1
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: 1
+  x: 2
+  y: 0
+  z: 0
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &909319773
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909319770}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &909319774
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 909319770}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &920029700
 GameObject:
   m_ObjectHideFlags: 0
@@ -19477,6 +18895,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 931923713}
   m_CullTransparentMesh: 0
+--- !u!1 &939485964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939485965}
+  - component: {fileID: 939485968}
+  - component: {fileID: 939485967}
+  - component: {fileID: 939485966}
+  m_Layer: 28
+  m_Name: Tile_0x2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939485965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939485964}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2, y: 0, z: 2}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939485966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939485964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  type: 1
+  walkable: 1
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: 0
+  x: 0
+  y: 0
+  z: 2
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &939485967
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939485964}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &939485968
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939485964}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &939668013
 GameObject:
   m_ObjectHideFlags: 0
@@ -20607,7 +20218,7 @@ RectTransform:
   m_Father: {fileID: 1095378809}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.00000029802322}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -25388,199 +24999,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1259251933}
   m_CullTransparentMesh: 0
---- !u!1 &1262236381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1262236382}
-  - component: {fileID: 1262236385}
-  - component: {fileID: 1262236384}
-  - component: {fileID: 1262236383}
-  m_Layer: 28
-  m_Name: Tile_1x1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1262236382
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1262236381}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1262236383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1262236381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 5
-  type: 1
-  walkable: 0
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: -1
-  x: 1
-  y: 0
-  z: 1
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &1262236384
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1262236381}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1262236385
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1262236381}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &1263468616
 GameObject:
   m_ObjectHideFlags: 0
@@ -26393,127 +25811,58 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1352479136}
   m_CullTransparentMesh: 0
---- !u!1 &1356319218
+--- !u!1 &1352726112
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1356319219}
-  - component: {fileID: 1356319221}
-  - component: {fileID: 1356319220}
-  m_Layer: 5
-  m_Name: UnderLine
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1356319219
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356319218}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 782007307}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -40, y: 0.5}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &1356319220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356319218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1356319221
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356319218}
-  m_CullTransparentMesh: 0
---- !u!1 &1357611178
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1357611179}
-  - component: {fileID: 1357611182}
-  - component: {fileID: 1357611181}
-  - component: {fileID: 1357611180}
+  - component: {fileID: 1352726113}
+  - component: {fileID: 1352726116}
+  - component: {fileID: 1352726115}
+  - component: {fileID: 1352726114}
   m_Layer: 28
-  m_Name: Tile_1x0
+  m_Name: Tile_1x2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1357611179
+--- !u!4 &1352726113
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357611178}
+  m_GameObject: {fileID: 1352726112}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -3}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
   m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 4
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1357611180
+--- !u!114 &1352726114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357611178}
+  m_GameObject: {fileID: 1352726112}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 4
+  index: 5
   type: 1
   walkable: 1
   fogOfWarObj: {fileID: 0}
   unit: {fileID: 0}
   spawnAreaID: -1
-  deployAreaID: 1
+  deployAreaID: 0
   x: 1
   y: 0
-  z: 0
+  z: 2
   distance: 0
   hostileInRangeList: []
   forcedVisibleDuration:
@@ -26613,12 +25962,12 @@ MonoBehaviour:
     APMax: 0
     stun: 0
     silence: 0
---- !u!23 &1357611181
+--- !u!23 &1352726115
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357611178}
+  m_GameObject: {fileID: 1352726112}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -26648,13 +25997,82 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &1357611182
+--- !u!33 &1352726116
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1357611178}
+  m_GameObject: {fileID: 1352726112}
   m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
+--- !u!1 &1356319218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1356319219}
+  - component: {fileID: 1356319221}
+  - component: {fileID: 1356319220}
+  m_Layer: 5
+  m_Name: UnderLine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1356319219
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1356319218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 782007307}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -40, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1356319220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1356319218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1356319221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1356319218}
+  m_CullTransparentMesh: 0
 --- !u!1 &1363462988
 GameObject:
   m_ObjectHideFlags: 0
@@ -27960,199 +27378,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1439547997}
   m_CullTransparentMesh: 0
---- !u!1 &1449747330
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1449747331}
-  - component: {fileID: 1449747334}
-  - component: {fileID: 1449747333}
-  - component: {fileID: 1449747332}
-  m_Layer: 28
-  m_Name: Tile_2x2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1449747331
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449747330}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2, y: 0, z: 1}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1449747332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449747330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 10
-  type: 1
-  walkable: 0
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: -1
-  x: 2
-  y: 0
-  z: 2
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &1449747333
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449747330}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1449747334
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449747330}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &1454455782
 GameObject:
   m_ObjectHideFlags: 0
@@ -29064,59 +28289,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1503950443}
   m_CullTransparentMesh: 0
---- !u!1 &1506277294
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1506277295}
-  - component: {fileID: 1506277296}
-  m_Layer: 28
-  m_Name: SquareGrid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1506277295
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1506277294}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 730171223}
-  - {fileID: 669498833}
-  - {fileID: 233299052}
-  - {fileID: 132038110}
-  - {fileID: 1357611179}
-  - {fileID: 1262236382}
-  - {fileID: 333658640}
-  - {fileID: 244006192}
-  - {fileID: 87281640}
-  - {fileID: 741250340}
-  - {fileID: 1449747331}
-  - {fileID: 1517959472}
-  m_Father: {fileID: 1602755753}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1506277296
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1506277294}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 6, y: 0, z: 8}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1510476801
 GameObject:
   m_ObjectHideFlags: 0
@@ -29496,199 +28668,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1517741591}
   m_CullTransparentMesh: 0
---- !u!1 &1517959471
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1517959472}
-  - component: {fileID: 1517959475}
-  - component: {fileID: 1517959474}
-  - component: {fileID: 1517959473}
-  m_Layer: 28
-  m_Name: Tile_2x3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1517959472
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1517959471}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 2, y: 0, z: 3}
-  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
-  m_Children: []
-  m_Father: {fileID: 1506277295}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1517959473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1517959471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 11
-  type: 1
-  walkable: 1
-  fogOfWarObj: {fileID: 0}
-  unit: {fileID: 0}
-  spawnAreaID: -1
-  deployAreaID: 0
-  x: 2
-  y: 0
-  z: 3
-  distance: 0
-  hostileInRangeList: []
-  forcedVisibleDuration:
-    duration: 0
-    turnCounter: 0
-  hostileCount: 0
-  coverScore: 0
-  obstacleT: {fileID: 0}
-  wallList: []
-  collectible: {fileID: 0}
-  fixedEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
-  effectList: []
-  activeEffect:
-    HP: 0
-    AP: 0
-    HPPerTurn: 0
-    APPerTurn: 0
-    moveAPCost: 0
-    attackAPCost: 0
-    turnPriority: 0
-    moveRange: 0
-    attackRange: 0
-    sight: 0
-    movePerTurn: 0
-    attackPerTurn: 0
-    counterPerTurn: 0
-    damage: 0
-    damageMin: 0
-    damageMax: 0
-    hitChance: 0
-    dodgeChance: 0
-    critChance: 0
-    critAvoidance: 0
-    critMultiplier: 0
-    stunChance: 0
-    stunAvoidance: 0
-    stunDuration: 0
-    silentChance: 0
-    silentAvoidance: 0
-    silentDuration: 0
-    flankingBonus: 0
-    flankedModifier: 0
-    icon: {fileID: 0}
-    name: 
-    desp: 
-    duration: -1
-    durationCounter:
-      duration: 0
-      turnCounter: 0
-    damageType: 0
-    HPMin: 0
-    HPMax: 0
-    APMin: 0
-    APMax: 0
-    stun: 0
-    silence: 0
---- !u!23 &1517959474
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1517959471}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &1517959475
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1517959471}
-  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &1519859551
 GameObject:
   m_ObjectHideFlags: 0
@@ -31456,7 +30435,7 @@ Transform:
   - {fileID: 1734590259}
   - {fileID: 1829503970}
   - {fileID: 1381758168}
-  - {fileID: 1506277295}
+  - {fileID: 2116161881}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31901,6 +30880,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1620283222}
   m_CullTransparentMesh: 0
+--- !u!1 &1622906981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622906982}
+  - component: {fileID: 1622906985}
+  - component: {fileID: 1622906984}
+  - component: {fileID: 1622906983}
+  m_Layer: 28
+  m_Name: Tile_0x1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1622906982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622906981}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622906983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622906981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  type: 1
+  walkable: 0
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: -1
+  x: 0
+  y: 0
+  z: 1
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &1622906984
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622906981}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1622906985
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1622906981}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &1626416422
 GameObject:
   m_ObjectHideFlags: 0
@@ -33012,6 +32184,199 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1684993332}
   m_CullTransparentMesh: 0
+--- !u!1 &1687488471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1687488472}
+  - component: {fileID: 1687488475}
+  - component: {fileID: 1687488474}
+  - component: {fileID: 1687488473}
+  m_Layer: 28
+  m_Name: Tile_0x0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1687488472
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687488471}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -2, y: 0, z: -2}
+  m_LocalScale: {x: 2, y: 2.000002, z: 2.000002}
+  m_Children: []
+  m_Father: {fileID: 2116161881}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1687488473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687488471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f627b2f1ed1a6f41bff78b0f1bd75a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  type: 1
+  walkable: 1
+  fogOfWarObj: {fileID: 0}
+  unit: {fileID: 0}
+  spawnAreaID: -1
+  deployAreaID: 1
+  x: 0
+  y: 0
+  z: 0
+  distance: 0
+  hostileInRangeList: []
+  forcedVisibleDuration:
+    duration: 0
+    turnCounter: 0
+  hostileCount: 0
+  coverScore: 0
+  obstacleT: {fileID: 0}
+  wallList: []
+  collectible: {fileID: 0}
+  fixedEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+  effectList: []
+  activeEffect:
+    HP: 0
+    AP: 0
+    HPPerTurn: 0
+    APPerTurn: 0
+    moveAPCost: 0
+    attackAPCost: 0
+    turnPriority: 0
+    moveRange: 0
+    attackRange: 0
+    sight: 0
+    movePerTurn: 0
+    attackPerTurn: 0
+    counterPerTurn: 0
+    damage: 0
+    damageMin: 0
+    damageMax: 0
+    hitChance: 0
+    dodgeChance: 0
+    critChance: 0
+    critAvoidance: 0
+    critMultiplier: 0
+    stunChance: 0
+    stunAvoidance: 0
+    stunDuration: 0
+    silentChance: 0
+    silentAvoidance: 0
+    silentDuration: 0
+    flankingBonus: 0
+    flankedModifier: 0
+    icon: {fileID: 0}
+    name: 
+    desp: 
+    duration: -1
+    durationCounter:
+      duration: 0
+      turnCounter: 0
+    damageType: 0
+    HPMin: 0
+    HPMax: 0
+    APMin: 0
+    APMax: 0
+    stun: 0
+    silence: 0
+--- !u!23 &1687488474
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687488471}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: a868ba5b83d23414680ca06103987954, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1687488475
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1687488471}
+  m_Mesh: {fileID: 4300000, guid: 70537066fb8a0334abeac087cf7e3d2a, type: 3}
 --- !u!1 &1690940582
 GameObject:
   m_ObjectHideFlags: 0
@@ -35217,9 +34582,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: cd371da9d8d9da04ab38bde341107ae5, type: 2}
     - {fileID: 11400000, guid: 537a2b3652b2cb34faca747e1ce67af6, type: 2}
     deployableTileList:
-    - {fileID: 1517959473}
-    - {fileID: 244006193}
-    - {fileID: 132038111}
+    - {fileID: 879680975}
+    - {fileID: 1352726114}
+    - {fileID: 939485966}
     allUnitList: []
     movedUnitList: []
     isPlayerFaction: 1
@@ -35253,9 +34618,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 79254b2a3e4b8f9438bd70c9fcef8da8, type: 2}
     - {fileID: 11400000, guid: 6dcbc074dc251864eb9733f676af35db, type: 2}
     deployableTileList:
-    - {fileID: 87281641}
-    - {fileID: 1357611180}
-    - {fileID: 730171224}
+    - {fileID: 909319772}
+    - {fileID: 420509628}
+    - {fileID: 1687488473}
     allUnitList: []
     movedUnitList: []
     isPlayerFaction: 1
@@ -37813,7 +37178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5.0001526}
+  m_AnchoredPosition: {x: 0, y: 5.0000153}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1940814953
@@ -40978,6 +40343,56 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2107140439}
   m_CullTransparentMesh: 0
+--- !u!1 &2116161880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2116161881}
+  - component: {fileID: 2116161882}
+  m_Layer: 28
+  m_Name: SquareGrid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2116161881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116161880}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1687488472}
+  - {fileID: 1622906982}
+  - {fileID: 939485965}
+  - {fileID: 420509627}
+  - {fileID: 308463885}
+  - {fileID: 1352726113}
+  - {fileID: 909319771}
+  - {fileID: 773111232}
+  - {fileID: 879680974}
+  m_Father: {fileID: 1602755753}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2116161882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2116161880}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6, y: 0, z: 6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2116420689
 GameObject:
   m_ObjectHideFlags: 0
