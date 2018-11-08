@@ -400,7 +400,7 @@ MonoBehaviour:
   attackRangeMin: 0
   sight: 5
   movePerTurn: 0
-  attackPerTurn: 0
+  attackPerTurn: 1
   counterPerTurn: 1
   abilityPerTurn: 1
   moveRemain: 1
