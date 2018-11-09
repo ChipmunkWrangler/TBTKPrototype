@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Editor\W_UnitAbilityEditorWindow.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\__MenuExtension.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\__SupportContactWindow.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\_EditorItem.cs" />
@@ -78,7 +79,6 @@
      <Compile Include="Assets\TBTK\Scripts\Editor\W_FactionManagerEditorWindow.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\W_PerkEditorWindow.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\W_TBEditor.cs" />
-     <Compile Include="Assets\TBTK\Scripts\Editor\W_UnitAbilityEditorWindow.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\W_UnitEditorWindow.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/Users/rafael/Documents/Work/Flower Blade/repos/TBTKPrototype/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

@@ -493,7 +493,7 @@ MonoBehaviour:
   abilityRemain: 1
   damageMin: 4
   damageMax: 7
-  hitChance: 0.8
+  hitChance: 0.5
   dodgeChance: 0.1
   critChance: 0.2
   critAvoidance: 0

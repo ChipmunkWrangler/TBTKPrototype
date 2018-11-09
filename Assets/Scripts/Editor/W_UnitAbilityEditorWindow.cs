@@ -124,7 +124,7 @@ namespace TBTK {
 				EditorGUI.LabelField(new Rect(startX, startY+=spaceY, width, height), cont);
 				ability.useLimit=EditorGUI.IntField(new Rect(startX+spaceX, startY, widthS, height), ability.useLimit);
 				
-				cont=new GUIContent("Hit Chance:", "The chance of the ability to be successfully cast on target. Takes value from 0-1 with 0.7 means 70% chance to success.");
+				cont=new GUIContent("Hit Chance Multiplier:", "0.5 => this ability hits with half of the unit's normal hit chance");
 				EditorGUI.LabelField(new Rect(startX, startY+=spaceY, width, height), cont);
 				ability.chanceToHit=EditorGUI.FloatField(new Rect(startX+spaceX, startY, widthS, height), ability.chanceToHit);
 				

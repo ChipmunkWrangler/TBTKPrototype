@@ -50,13 +50,13 @@ MonoBehaviour:
     factionID: 0
     unit: {fileID: 0}
     cost: 1
-    cooldown: 0
+    cooldown: 1
     currentCD:
       duration: 0
       turnCounter: 0
     useLimit: -1
     useCount: 0
-    chanceToHit: 0.5
+    chanceToHit: 1
     effTargetType: 1
     requireTargetSelection: 1
     targetType: 1
@@ -121,7 +121,7 @@ MonoBehaviour:
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
-    normalAttack: 1
+    normalAttack: 0
     requireDirectLOS: 1
   - prefabID: 8
     icon: {fileID: 21300000, guid: d90b9ef4907e8ca49b32dac8e5082f3b, type: 3}
@@ -138,7 +138,7 @@ MonoBehaviour:
       turnCounter: 0
     useLimit: -1
     useCount: 0
-    chanceToHit: 0.5
+    chanceToHit: 1
     effTargetType: 1
     requireTargetSelection: 1
     targetType: 1
@@ -208,8 +208,7 @@ MonoBehaviour:
   - prefabID: 1
     icon: {fileID: 21300000, guid: bab271d6520555840aac48036865e1a6, type: 3}
     name: Buff Attack
-    desp: Buff the unit attack damage, hit chance and critical chance by 20% for the
-      next turn.
+    desp: Increase this unit's attack damage by 50% and hit chance by 20%.
     isFactionAbility: 0
     onlyAvailableViaPerk: 0
     factionID: 0
@@ -221,7 +220,7 @@ MonoBehaviour:
       turnCounter: 0
     useLimit: -1
     useCount: 0
-    chanceToHit: 1
+    chanceToHit: 999
     effTargetType: 2
     requireTargetSelection: 0
     targetType: 2
