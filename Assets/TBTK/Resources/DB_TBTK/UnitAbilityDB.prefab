@@ -44,14 +44,13 @@ MonoBehaviour:
   - prefabID: 0
     icon: {fileID: 21300000, guid: 65cc8eed81db5b143ad9b4ddba63547f, type: 3}
     name: Damage Target
-    desp: A instant attack that damage the target by 5-8 and stun it for the next
-      2 turns
+    desp: A instant attack that damage the target by 5-8.
     isFactionAbility: 0
     onlyAvailableViaPerk: 0
     factionID: 0
     unit: {fileID: 0}
-    cost: 5
-    cooldown: 3
+    cost: 1
+    cooldown: 0
     currentCD:
       duration: 0
       turnCounter: 0
@@ -108,7 +107,7 @@ MonoBehaviour:
       icon: {fileID: 0}
       name: 
       desp: 
-      duration: 2
+      duration: -1
       durationCounter:
         duration: 0
         turnCounter: 0
@@ -117,7 +116,7 @@ MonoBehaviour:
       HPMax: -8
       APMin: 0
       APMax: 0
-      stun: 1
+      stun: 0
       silence: 0
     spawnUnit: {fileID: 0}
     type: 1
