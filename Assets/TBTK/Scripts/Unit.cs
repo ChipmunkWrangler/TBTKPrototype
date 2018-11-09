@@ -66,7 +66,9 @@ namespace TBTK{
 		
 		public float HPPerTurn=0;
 		public float APPerTurn=0;
-
+		// <HACKS FOR PROTOTYPE>
+		private int numTurnsPlayed = -2; // NextTurn is called twice before a unit can act; not sure why
+		//</HACKS>
 		public float moveAPCost=0;
 		public float attackAPCost=0;
 		
@@ -134,7 +136,8 @@ namespace TBTK{
 		//these section are functions that get active stats of unit
 		
 		public float GetFullHP(){ return defaultHP*(1+GetEffHPBuff()+PerkManager.GetUnitHPBuff(prefabID)); }
-		public float GetFullAP(){ return defaultAP*(1+GetEffAPBuff()+PerkManager.GetUnitAPBuff(prefabID)); }
+		public float GetFullAP(){ 
+			return numTurnsPlayed + defaultAP*(1+GetEffAPBuff()+PerkManager.GetUnitAPBuff(prefabID)); }
 		
 		public float GetHPPerTurn(){ return HPPerTurn+GetEffHPPerTurn()+tile.GetHPPerTurn()+PerkManager.GetUnitHPPerTurn(prefabID); }
 		public float GetAPPerTurn(){ return APPerTurn+GetEffAPPerTurn()+tile.GetAPPerTurn()+PerkManager.GetUnitAPPerTurn(prefabID); }
@@ -1094,6 +1097,7 @@ namespace TBTK{
 		//called when a unit just reach it's turn
 		public bool NewTurn(){
 			//Debug.Log("ResetUnitTurnData");
+			numTurnsPlayed++;
 			moveRemain=GetMovePerTurn();
 			attackRemain=GetAttackPerTurn();
 			counterRemain=GetCounterPerTurn();
