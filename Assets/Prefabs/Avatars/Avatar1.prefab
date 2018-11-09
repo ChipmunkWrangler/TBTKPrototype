@@ -387,11 +387,11 @@ MonoBehaviour:
   moveSpeed: 10
   silenced: 0
   defaultHP: 15
-  defaultAP: 5
+  defaultAP: 1
   HP: 15
   AP: 20
   HPPerTurn: 0
-  APPerTurn: 5
+  APPerTurn: 0
   moveAPCost: 99
   attackAPCost: 5
   turnPriority: 0

@@ -471,11 +471,11 @@ MonoBehaviour:
   moveSpeed: 10
   silenced: 0
   defaultHP: 12
-  defaultAP: 20
+  defaultAP: 1
   HP: 12
   AP: 20
   HPPerTurn: 0
-  APPerTurn: 5
+  APPerTurn: 0
   moveAPCost: 2
   attackAPCost: 6
   turnPriority: 6
@@ -483,8 +483,8 @@ MonoBehaviour:
   attackRange: 4
   attackRangeMin: 0
   sight: 5
-  movePerTurn: 1
-  attackPerTurn: 1
+  movePerTurn: 0
+  attackPerTurn: 0
   counterPerTurn: 0
   abilityPerTurn: 1
   moveRemain: 1
@@ -559,7 +559,7 @@ MonoBehaviour:
     APMax: 0
     stun: 0
     silence: 0
-  abilityIDList: 0d000000010000000a00000005000000
+  abilityIDList: 00000000
   abilityList: []
   thisT: {fileID: 0}
   thisObj: {fileID: 0}
