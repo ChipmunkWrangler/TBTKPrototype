@@ -485,7 +485,9 @@ namespace TBTK{
 		}
 		//callback function when the shootObject of an ability which require shoot hits it's target
 		public float AbilityHit(int index){
-			if(Random.value>abilityList[index].chanceToHit * GetHitChance()){ // PROTOYPE HACK: Ability chanceToHit is a multiplier to normal chance to hit
+			float targetDodgeChance = abilityTargetedTile.unit.GetDodgeChance(); // PROTOTYPE HACK Dodge chance affects abilties
+			if(Random.value>abilityList[index].chanceToHit * (GetHitChance() - targetDodgeChance))  // PROTOYPE HACK: Ability chanceToHit is a multiplier to normal chance to hit
+			{
 				abilityTargetedTile.GetPos();
 				new TextOverlay(abilityTargetedTile.GetPos(), "missed", Color.white);
 				return 0;
