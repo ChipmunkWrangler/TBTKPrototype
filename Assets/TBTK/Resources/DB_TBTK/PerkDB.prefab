@@ -1,0 +1,1179 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: PerkDB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0.049999952, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21825f314141f64d82372a26aa39231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perkList:
+  - prefabID: 7
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 6a3900f8e636e2a48b05218e1700c041, type: 3}
+    name: Tank MKII
+    desp: Increase Tank MKI hit chance by 10%
+    type: 0
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 03000000ffffffff
+    unitIDList: 03000000
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0.1
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 8
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 1d2580553e629b1468ead40653fa53ce, type: 3}
+    name: Tank MKIII
+    desp: Increase Tank MKII critical chance by 15%
+    type: 0
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 04000000ffffffff
+    unitIDList: 04000000
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0.15
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 9
+    instanceID: 0
+    icon: {fileID: 21300000, guid: c87b47d2f083bc24ebd578523b21c905, type: 3}
+    name: Tank MKIV
+    desp: Increase Tank MKIII damage by 30%
+    type: 0
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 05000000ffffffff
+    unitIDList: 05000000
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0.3
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 6
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 78c6c8699f99e714695d3b05e6c26257, type: 3}
+    name: Dominant Attacker
+    desp: 'All unit''s normal attack has 10% to stun the target for 1 turn. '
+    type: 1
+    purchased: 0
+    cost: 15
+    minPerkPoint: 0
+    prereq: 070000000800000009000000
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0.25
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0.25
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0.25
+      stunAvoidance: 0
+      stunDuration: 2
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 5
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 4497fb8a8a150b74694c540e96394b38, type: 3}
+    name: Long Ranger
+    desp: Increase artillery attack range by 2
+    type: 0
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 07000000ffffffff
+    unitIDList: 07000000
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 2
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 10
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 2ac8d2cb034236d45af1c3a1ea6b67a6, type: 3}
+    name: Scout Drone
+    desp: Increase drone's range of sight by 1 and move range by 1
+    type: 0
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 08000000ffffffff
+    unitIDList: 08000000
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 1
+      attackRange: 0
+      sight: 1
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 11
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 45bb69a3088081c4ab0216083c1e763f, type: 3}
+    name: Mobile lanuncher
+    desp: Increase rocket-launcher dodge chance by 15%
+    type: 0
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 06000000ffffffff
+    unitIDList: 06000000
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0.15
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 12
+    instanceID: 0
+    icon: {fileID: 21300000, guid: c61e3b50d57cf2b47ab362f6539e95c1, type: 3}
+    name: Battle Harden
+    desp: All Unit is 25% less susceptible to critical hit.
+    type: 1
+    purchased: 0
+    cost: 15
+    minPerkPoint: 0
+    prereq: 050000000a0000000b000000
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0.25
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 0
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 93e011c29a9a5184398fa87ed0f7b3c0, type: 3}
+    name: Repair All
+    desp: Unlock new ability - Repair all friendly units on the grid
+    type: 7
+    purchased: 0
+    cost: 20
+    minPerkPoint: 1
+    prereq: 
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: 0
+    subFacAbilityID: -1
+  - prefabID: 2
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 44c1e76a5e5bb0645836cd611ae794ec, type: 3}
+    name: Buff Defense
+    desp: 'Unlock new ability - All friendly unit gain 50% dodge chance and 50% critical
+      avoidance against hostile attack for 2 turns. '
+    type: 7
+    purchased: 0
+    cost: 20
+    minPerkPoint: 0
+    prereq: 00000000
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: 4
+    subFacAbilityID: -1
+  - prefabID: 14
+    instanceID: 0
+    icon: {fileID: 21300000, guid: c61e3b50d57cf2b47ab362f6539e95c1, type: 3}
+    name: Defensive Tactic
+    desp: Increase the use limit of Buff Defense in a battle by 2.
+    type: 4
+    purchased: 0
+    cost: 25
+    minPerkPoint: 0
+    prereq: 00000000
+    itemIDList: 04000000ffffffff
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 04000000
+    abCostMod: 0
+    abCooldownMod: 0
+    abUseLimitMod: 2
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 3
+    instanceID: 0
+    icon: {fileID: 21300000, guid: d90b9ef4907e8ca49b32dac8e5082f3b, type: 3}
+    name: AOE Attack
+    desp: Unlock new ability - Damage all Hostiles within an area and stun them for
+      one turn.
+    type: 7
+    purchased: 0
+    cost: 20
+    minPerkPoint: 2
+    prereq: 
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: 2
+    subFacAbilityID: -1
+  - prefabID: 1
+    instanceID: 0
+    icon: {fileID: 21300000, guid: bab271d6520555840aac48036865e1a6, type: 3}
+    name: Buff Attack
+    desp: Unlock new ability - All friendly unit gain an additional attack for a turn.
+      In addition to that, all attacks gain 10% bonus damage, hit change and critical
+      chance.
+    type: 7
+    purchased: 0
+    cost: 20
+    minPerkPoint: 1
+    prereq: 
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: 1
+    subFacAbilityID: -1
+  - prefabID: 13
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 6c066d397bb3f8b4ca0eba1d836ce195, type: 3}
+    name: Offensive Tactic
+    desp: Increase the use limit of Buff Attack in a battle by 2.
+    type: 4
+    purchased: 0
+    cost: 25
+    minPerkPoint: 0
+    prereq: 0100000003000000
+    itemIDList: 01000000ffffffff
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 01000000
+    abCostMod: 0
+    abCooldownMod: 0
+    abUseLimitMod: 2
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 15
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 6a3900f8e636e2a48b05218e1700c041, type: 3}
+    name: Upgrade Ability
+    desp: Upgrade "damage target" ability of Tank MKII and Tank MKIII to do more damage
+    type: 6
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 03000000
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 5
+    abCooldownMod: 5
+    abUseLimitMod: -1
+    abHitChanceMod: 0
+    abRangeMod: 5
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 0300000004000000
+    newUnitAbilityID: 11
+    subUnitAbilityID: 0
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 17
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 7d3390e8d419c9a4ebdeede363ce33bd, type: 3}
+    name: Mobility
+    desp: Increase action point of all units by 15%
+    type: 1
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 0
+    abCooldownMod: 0
+    abUseLimitMod: 0
+    abHitChanceMod: 0
+    abRangeMod: 0
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0.15
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 16
+    instanceID: 0
+    icon: {fileID: 21300000, guid: 83023dae8470b8646a9c4ed56527d210, type: 3}
+    name: Survivability
+    desp: Increase hit point of all units by 15%
+    type: 1
+    purchased: 0
+    cost: 10
+    minPerkPoint: 1
+    prereq: 11000000
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 0
+    abCooldownMod: 0
+    abUseLimitMod: 0
+    abHitChanceMod: 0
+    abRangeMod: 0
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0.15
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 18
+    instanceID: 0
+    icon: {fileID: 21300000, guid: d0ebfb471ba26ec46ab5582196da109d, type: 3}
+    name: Superiority
+    desp: All units restore 2 HP and 2 AP per turn
+    type: 1
+    purchased: 0
+    cost: 10
+    minPerkPoint: 0
+    prereq: 10000000
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 0
+    abCooldownMod: 0
+    abUseLimitMod: 0
+    abHitChanceMod: 0
+    abRangeMod: 0
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 2
+      APPerTurn: 2
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: -1
+    subFacAbilityID: -1
+  - prefabID: 4
+    instanceID: 0
+    icon: {fileID: 21300000, guid: c1dd5b8bb0b217f48839fff5b432e422, type: 3}
+    name: DamageAll
+    desp: 
+    type: 7
+    purchased: 0
+    cost: 1
+    minPerkPoint: 0
+    prereq: 
+    itemIDList: 
+    unitIDList: 
+    unitAbilityIDList: 
+    facAbilityIDList: 
+    abCostMod: 0
+    abCooldownMod: 0
+    abUseLimitMod: 0
+    abHitChanceMod: 0
+    abRangeMod: 0
+    abAOERangeMod: 0
+    abHPMod: 0
+    abAPMod: 0
+    abDurationMod: 0
+    stats:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+    addAbilityToAllUnit: 0
+    newABUnitIDList: 
+    newUnitAbilityID: -1
+    subUnitAbilityID: -1
+    newFacAbilityID: 8
+    subFacAbilityID: -1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabAsset: 1

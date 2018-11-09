@@ -1,0 +1,1798 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: FactionAbilityDB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.5, y: 0.049999952, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21a02f8bd63d62649ae06b417346a884, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityList:
+  - prefabID: 0
+    icon: {fileID: 21300000, guid: 93e011c29a9a5184398fa87ed0f7b3c0, type: 3}
+    name: Repair All
+    desp: Repair all friendly units on the field for 5-10 HP
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 60
+    cooldown: 5
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 2
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 5
+      HPMax: 10
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 1
+    icon: {fileID: 21300000, guid: 6c066d397bb3f8b4ca0eba1d836ce195, type: 3}
+    name: Buff Attack
+    desp: All friendly unit gain an additional attack for a turn. In addition to that,
+      all attacks gain 10% bonus hit change and critical chance.
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 100
+    cooldown: 1
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 1
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0.1
+      dodgeChance: 0
+      critChance: 0.1
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 4
+    icon: {fileID: 21300000, guid: c61e3b50d57cf2b47ab362f6539e95c1, type: 3}
+    name: Buff Defense
+    desp: 'All friendly units gain 50% dodge chance and 50% critical avoidance against
+      hostile attack for 2 turns. '
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 100
+    cooldown: 1
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0.5
+      critChance: 0
+      critAvoidance: 0.5
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 2
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 2
+    icon: {fileID: 21300000, guid: 789ba72eaea755f458a15dd8101401d9, type: 3}
+    name: AOE Attack
+    desp: Hit all unit within an area for 8-15 damage. (friendly fire applies)
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 35
+    cooldown: 2
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 1
+    targetType: 3
+    range: 5
+    aoeRange: 1
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 100000, guid: ac00a2051e45e0c43bd425dffb28facd, type: 2}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: -8
+      HPMax: -15
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 3
+    icon: {fileID: 21300000, guid: 8f6dd8636a432dd409d1277ebf5ae7e2, type: 3}
+    name: Satelite Scan
+    desp: Reveal the grid for a single turn
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 0
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 60
+    cooldown: 3
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 2
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 3
+    requireTargetSelection: 1
+    targetType: 4
+    range: 5
+    aoeRange: 3
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 3
+  - prefabID: 5
+    icon: {fileID: 21300000, guid: 7bbf316a8deb62e40b391bd5db52fbba, type: 3}
+    name: Stun Attack
+    desp: Attack a hostile unit, causing 10-20 damage to and stun it for the next
+      2 turns
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 0
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 40
+    cooldown: 5
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 1
+    requireTargetSelection: 1
+    targetType: 1
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 100000, guid: d34914b9365d4384da7654c6cd60fa1f, type: 2}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 2
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: -10
+      HPMax: -20
+      APMin: 0
+      APMax: 0
+      stun: 1
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 6
+    icon: {fileID: 21300000, guid: 37dd1af1050c7d54eb8fb0099c00b08d, type: 3}
+    name: Repair Unit
+    desp: Repair a friendly unit for 10-20 HP
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 0
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 20
+    cooldown: 3
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 2
+    requireTargetSelection: 1
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 100000, guid: c95020d061a23034a95837de205d2ee4, type: 2}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 10
+      HPMax: 20
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 7
+    icon: {fileID: 21300000, guid: 83023dae8470b8646a9c4ed56527d210, type: 3}
+    name: Reinforcement
+    desp: Call in reinforcement, spawn a new unit at the selected location
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 0
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 0
+    cooldown: 2
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 1
+    targetType: 4
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 2
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 3
+      attackRange: 3
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 5
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 5
+      HPMax: 5
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 11400000, guid: cd371da9d8d9da04ab38bde341107ae5, type: 2}
+    type: 2
+  - prefabID: 8
+    icon: {fileID: 21300000, guid: c1dd5b8bb0b217f48839fff5b432e422, type: 3}
+    name: Damage All
+    desp: 
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 5
+    cooldown: 5
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 1
+    requireTargetSelection: 0
+    targetType: 0
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: -5
+      HPMax: -10
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 9
+    icon: {fileID: 21300000, guid: d0ebfb471ba26ec46ab5582196da109d, type: 3}
+    name: Col_HPGain
+    desp: 
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 0
+    cooldown: 0
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 0
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 1
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: -5
+      HPMax: -12
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 10
+    icon: {fileID: 21300000, guid: d0ebfb471ba26ec46ab5582196da109d, type: 3}
+    name: Col_APGain
+    desp: 
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 0
+    cooldown: 0
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 0
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 2
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 5
+      APMax: 10
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 11
+    icon: {fileID: 21300000, guid: d0ebfb471ba26ec46ab5582196da109d, type: 3}
+    name: Col_DamageBuff
+    desp: Damage increased by 100% for the next 2 turns
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 0
+    cooldown: 0
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 0
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 2
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 1
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 2
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 5
+      APMax: 10
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 12
+    icon: {fileID: 21300000, guid: d0ebfb471ba26ec46ab5582196da109d, type: 3}
+    name: Col_DefenseBuff
+    desp: Dodge chance increased by 100% for the next 2 turns
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 0
+    cooldown: 0
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 0
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 2
+    requireTargetSelection: 1
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 1
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 2
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 5
+      APMax: 10
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 13
+    icon: {fileID: 21300000, guid: d0ebfb471ba26ec46ab5582196da109d, type: 3}
+    name: Col_AttackBuff
+    desp: Gain additional attack for the next 2 turns
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 0
+    cooldown: 0
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 0
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 2
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 1
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 2
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 5
+      APMax: 10
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  - prefabID: 14
+    icon: {fileID: 21300000, guid: d0ebfb471ba26ec46ab5582196da109d, type: 3}
+    name: Col_RangeBuff
+    desp: Attack range is increased by 2 for the next 2 turns
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 0
+    cooldown: 0
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 0
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 2
+    requireTargetSelection: 1
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 2
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 1
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: 2
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 5
+      APMax: 10
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 1
+  factionAbilityList:
+  - prefabID: 0
+    icon: {fileID: 21300000, guid: a23ffad76aa1b244d82ea43dd193c54d, type: 3}
+    name: Repair All
+    desp: Repair all friendly units on the grid
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 60
+    cooldown: 5
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 0
+  - prefabID: 1
+    icon: {fileID: 21300000, guid: 04ebc989ccca9a043a939b4fba176458, type: 3}
+    name: Buff Attack
+    desp: All friendly unit gain an additional attack for a turn. In addition to that,
+      all attacks gain 10% bonus damage, hit change and critical chance.
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 100
+    cooldown: 1
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 0
+  - prefabID: 4
+    icon: {fileID: 21300000, guid: ab77fab87c2a377459dea8eb4365d893, type: 3}
+    name: Buff Defense
+    desp: 'All friendly unit gain 50% dodge chance and 50% critical avoidance against
+      hostile attack for 2 turns. '
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 100
+    cooldown: 1
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 0
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 0
+  - prefabID: 2
+    icon: {fileID: 21300000, guid: 67975909df185dc46b58013175d2c934, type: 3}
+    name: AOE Attack
+    desp: Damage all Hostiles within an area and stun them for one turn.
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 35
+    cooldown: 2
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 1
+    targetType: 1
+    range: 5
+    aoeRange: 1
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 100000, guid: ac00a2051e45e0c43bd425dffb28facd, type: 2}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 0
+  - prefabID: 3
+    icon: {fileID: 21300000, guid: 2fedd4ef3d73b3540b27eef746f88d5a, type: 3}
+    name: Satelite Scan
+    desp: Reveal the grid for a single turn
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 1
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 60
+    cooldown: 1
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: 1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 1
+    targetType: 4
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 0}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 2
+  - prefabID: 5
+    icon: {fileID: 21300000, guid: b0eabd9a87fe7164abf589386b40c0eb, type: 3}
+    name: Attack
+    desp: Attack a hostile unit, causing moderate damage.
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 0
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 20
+    cooldown: 3
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 1
+    targetType: 1
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 100000, guid: d34914b9365d4384da7654c6cd60fa1f, type: 2}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 0
+  - prefabID: 6
+    icon: {fileID: 21300000, guid: 0f30a03ddf5a4a540910c3e37ea5a0d6, type: 3}
+    name: Repair
+    desp: Repair a friendly unit
+    isFactionAbility: 1
+    onlyAvailableViaPerk: 0
+    factionID: 0
+    unit: {fileID: 0}
+    cost: 20
+    cooldown: 2
+    currentCD:
+      duration: 0
+      turnCounter: 0
+    useLimit: -1
+    useCount: 0
+    chanceToHit: 1
+    effTargetType: 0
+    requireTargetSelection: 1
+    targetType: 2
+    range: 5
+    aoeRange: 0
+    shootObject: {fileID: 0}
+    enableMoveAfterCast: 1
+    enableAttackAfterCast: 1
+    enableAbilityAfterCast: 1
+    effectObject: {fileID: 100000, guid: c95020d061a23034a95837de205d2ee4, type: 2}
+    autoDestroyEffect: 1
+    effectObjectDuration: 1.5
+    effectObjectTarget: {fileID: 0}
+    autoDestroyEffectTgt: 1
+    effectObjectTgtDuration: 1.5
+    useDefaultEffect: 1
+    effectDelayDuration: 0.25
+    effect:
+      HP: 0
+      AP: 0
+      HPPerTurn: 0
+      APPerTurn: 0
+      moveAPCost: 0
+      attackAPCost: 0
+      turnPriority: 0
+      moveRange: 0
+      attackRange: 0
+      sight: 0
+      movePerTurn: 0
+      attackPerTurn: 0
+      counterPerTurn: 0
+      damage: 0
+      damageMin: 0
+      damageMax: 0
+      hitChance: 0
+      dodgeChance: 0
+      critChance: 0
+      critAvoidance: 0
+      critMultiplier: 0
+      stunChance: 0
+      stunAvoidance: 0
+      stunDuration: 0
+      silentChance: 0
+      silentAvoidance: 0
+      silentDuration: 0
+      flankingBonus: 0
+      flankedModifier: 0
+      icon: {fileID: 0}
+      name: 
+      desp: 
+      duration: -1
+      durationCounter:
+        duration: 0
+        turnCounter: 0
+      damageType: 0
+      HPMin: 0
+      HPMax: 0
+      APMin: 0
+      APMax: 0
+      stun: 0
+      silence: 0
+    spawnUnit: {fileID: 0}
+    type: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabAsset: 1

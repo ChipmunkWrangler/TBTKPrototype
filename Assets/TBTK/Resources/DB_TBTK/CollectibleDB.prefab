@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &112150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454068}
+  - component: {fileID: 11487786}
+  m_Layer: 0
+  m_Name: CollectibleDB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454068
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11487786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b0292188d267d74792b7b2a272f6343, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectibleList:
+  - {fileID: 11436946, guid: 987ceea455312a74da49c53a419c9203, type: 2}
+  - {fileID: 11401362, guid: f96e3a1b790350a4399a8a1a11ce3ff6, type: 2}
+  - {fileID: 11401198, guid: ccde283b8e3cf954d8c3d1b521b8729c, type: 2}
+  - {fileID: 11436414, guid: 1e87f22da9d48164c83aba37a7b4bf7e, type: 2}
+  - {fileID: 11413696, guid: 3a9e3644e112d5441b5862756995f482, type: 2}
+  - {fileID: 11434038, guid: a70346448c264b24aad60b35b282fd8b, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 112150}
+  m_IsPrefabAsset: 1
