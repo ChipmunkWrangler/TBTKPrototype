@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Unit.cs" />
      <Compile Include="Assets\TBTK\Scenes\DemoScripts\DemoCampaign.cs" />
      <Compile Include="Assets\TBTK\Scenes\DemoScripts\DemoMainMenu.cs" />
      <Compile Include="Assets\TBTK\Scenes\DemoScripts\DemoUILoadOut.cs" />
@@ -128,7 +129,6 @@
      <Compile Include="Assets\TBTK\Scripts\UI\UIUnitInfoScreen.cs" />
      <Compile Include="Assets\TBTK\Scripts\UI\UIUnitOverlay.cs" />
      <Compile Include="Assets\TBTK\Scripts\UI\UIUnitOverlayManager.cs" />
-     <Compile Include="Assets\TBTK\Scripts\Unit.cs" />
      <Compile Include="Assets\TBTK\Scripts\UnitAnimation.cs" />
      <Compile Include="Assets\TBTK\Scripts\UnitAudio.cs" />
      <Compile Include="Assets\TBTK\Scripts\Utilities.cs" />
