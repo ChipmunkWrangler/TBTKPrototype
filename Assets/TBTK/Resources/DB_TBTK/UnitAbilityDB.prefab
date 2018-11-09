@@ -44,7 +44,7 @@ MonoBehaviour:
   - prefabID: 0
     icon: {fileID: 21300000, guid: 65cc8eed81db5b143ad9b4ddba63547f, type: 3}
     name: Damage Target
-    desp: A instant attack that damage the target by 5-8.
+    desp: A instant attack that damage the target by 5.
     isFactionAbility: 0
     onlyAvailableViaPerk: 0
     factionID: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
         turnCounter: 0
       damageType: 0
       HPMin: -5
-      HPMax: -8
+      HPMax: -5
       APMin: 0
       APMax: 0
       stun: 0
@@ -126,22 +126,22 @@ MonoBehaviour:
   - prefabID: 8
     icon: {fileID: 21300000, guid: d90b9ef4907e8ca49b32dac8e5082f3b, type: 3}
     name: AOE Damage
-    desp: Hit all units within an area for 5-10 damage. (Friendly fire applies!)
+    desp: Hit all units within an area for 4 damage.
     isFactionAbility: 0
     onlyAvailableViaPerk: 0
     factionID: 0
     unit: {fileID: 0}
-    cost: 5
-    cooldown: 3
+    cost: 2
+    cooldown: 1
     currentCD:
       duration: 0
       turnCounter: 0
     useLimit: -1
     useCount: 0
     chanceToHit: 1
-    effTargetType: 0
+    effTargetType: 1
     requireTargetSelection: 1
-    targetType: 3
+    targetType: 1
     range: 5
     aoeRange: 1
     shootObject: {fileID: 100004, guid: aad4adc792154404ca0b557b0bc5a72a, type: 2}
@@ -194,8 +194,8 @@ MonoBehaviour:
         duration: 0
         turnCounter: 0
       damageType: 0
-      HPMin: -5
-      HPMax: -10
+      HPMin: -4
+      HPMax: -4
       APMin: 0
       APMax: 0
       stun: 0
