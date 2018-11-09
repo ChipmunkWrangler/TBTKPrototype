@@ -237,7 +237,7 @@ namespace TBTK{
 		//~ public UnitStats effectUnitStat;
 		
 		public void ApplyEffect(Effect eff, Unit srcUnit=null){
-			if(FactionManager.GetSelectedFactionID()!=factionID) eff.duration+=1;
+			// if(FactionManager.GetSelectedFactionID()!=factionID) eff.duration+=1; // PROTOTYPE HACK not sure what this was supposed to accomplish
 			
 			float HPVal=Random.Range(eff.HPMin, eff.HPMax);
 			if(HPVal<0){
@@ -272,8 +272,10 @@ namespace TBTK{
 		public void IterateEffectDuration(){
 			bool changed=false;
 			for(int i=0; i<effectList.Count; i++){
+				Debug.Log("Iterating effect " + effectList[i].name);
 				effectList[i].Iterate();
 				if(effectList[i].Due()){
+					Debug.Log("Removing effect " + effectList[i].name);
 					effectList.RemoveAt(i);	i-=1;
 					changed=true;
 				}
@@ -486,7 +488,9 @@ namespace TBTK{
 		//callback function when the shootObject of an ability which require shoot hits it's target
 		public float AbilityHit(int index){
 			float targetDodgeChance = abilityTargetedTile.unit.GetDodgeChance(); // PROTOTYPE HACK Dodge chance affects abilties
-			if(Random.value>abilityList[index].chanceToHit * (GetHitChance() - targetDodgeChance))  // PROTOYPE HACK: Ability chanceToHit is a multiplier to normal chance to hit
+			Debug.Log("Dodge chance " + targetDodgeChance);
+			Debug.Log("Hit chance " + GetHitChance());
+			if(Random.value>abilityList[index].chanceToHit * (GetHitChance() - targetDodgeChance))  // PROTOYPE HACK: Ability chanceToHit is a multiplier to normal chance to hit. Note that a negative dodge chance makes you easier to hit!
 			{
 				abilityTargetedTile.GetPos();
 				new TextOverlay(abilityTargetedTile.GetPos(), "missed", Color.white);
