@@ -65,7 +65,7 @@ MonoBehaviour:
     shootObject: {fileID: 100004, guid: 4e93ed59caa4c3748abbb0fee4f781fb, type: 2}
     enableMoveAfterCast: 0
     enableAttackAfterCast: 0
-    enableAbilityAfterCast: 0
+    enableAbilityAfterCast: 1
     effectObject: {fileID: 100000, guid: 84e736f52ff028e49bc2bc4baaea0908, type: 2}
     autoDestroyEffect: 1
     effectObjectDuration: 1.5
@@ -147,7 +147,7 @@ MonoBehaviour:
     shootObject: {fileID: 100004, guid: aad4adc792154404ca0b557b0bc5a72a, type: 2}
     enableMoveAfterCast: 0
     enableAttackAfterCast: 0
-    enableAbilityAfterCast: 0
+    enableAbilityAfterCast: 1
     effectObject: {fileID: 100000, guid: ac00a2051e45e0c43bd425dffb28facd, type: 2}
     autoDestroyEffect: 1
     effectObjectDuration: 1.5
@@ -214,7 +214,7 @@ MonoBehaviour:
     factionID: 0
     unit: {fileID: 0}
     cost: 1
-    cooldown: 1
+    cooldown: 2
     currentCD:
       duration: 0
       turnCounter: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
     shootObject: {fileID: 100000, guid: 391d5ce3e7e0be34ab9cc3dea4226cea, type: 2}
     enableMoveAfterCast: 0
     enableAttackAfterCast: 0
-    enableAbilityAfterCast: 0
+    enableAbilityAfterCast: 1
     effectObject: {fileID: 100000, guid: 48aa9bbb06ab8e34f9baa19eee93c358, type: 2}
     autoDestroyEffect: 1
     effectObjectDuration: 1.5
