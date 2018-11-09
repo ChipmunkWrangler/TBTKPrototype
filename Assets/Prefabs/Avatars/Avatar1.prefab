@@ -393,7 +393,7 @@ MonoBehaviour:
   HPPerTurn: 0
   APPerTurn: 0
   moveAPCost: 99
-  attackAPCost: 5
+  attackAPCost: 1
   turnPriority: 0
   moveRange: 0
   attackRange: 99
