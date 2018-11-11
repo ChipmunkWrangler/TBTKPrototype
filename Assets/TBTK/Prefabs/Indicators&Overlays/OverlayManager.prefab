@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &114330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470814}
+  - component: {fileID: 11462618}
+  m_Layer: 0
+  m_Name: OverlayManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470814
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11462618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 114330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e696dbf525f056e43a7509876ef3e8aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movedIndicator: {fileID: 400000, guid: cd8d56264b8be0f47b775c5a1ecdf2aa, type: 2}
+  hexCursorF: {fileID: 400000, guid: dc37f0e6eff4f494db78c01b8f0cd471, type: 2}
+  hexCursorH: {fileID: 400000, guid: 76269ee371c28d74d8b5a17a6a1387a5, type: 2}
+  hexSelected: {fileID: 400000, guid: 47552f13f1527b542b4ed18bbcdadd6e, type: 2}
+  hexDeployment: {fileID: 439414, guid: a794404b948b3a04185aa12db9ca723d, type: 2}
+  hexMoveable: {fileID: 439414, guid: deb1139f0dabc894b93ef62f3525b99f, type: 2}
+  hexHostile: {fileID: 400000, guid: 3d5d024fd3219d9439e0b5a8b8e8d83d, type: 2}
+  hexAbRange: {fileID: 439414, guid: a794404b948b3a04185aa12db9ca723d, type: 2}
+  hexAbTarget: {fileID: 400000, guid: 043fa3a41898b3b439aa5f10cfb5a64e, type: 2}
+  sqCursorF: {fileID: 400000, guid: 3caba98ca1ad2014697d07979229eabd, type: 2}
+  sqCursorH: {fileID: 400000, guid: 62462b2655ac43f4f9c93ef13840daca, type: 2}
+  sqSelected: {fileID: 400000, guid: 7a3a7ba87dd9ef34197a4d4f9e7c6595, type: 2}
+  sqDeployment: {fileID: 439886, guid: a95e53c1235521246aa4ef50027af06e, type: 2}
+  sqMoveable: {fileID: 439886, guid: 497083e7bd83e3b448093ae83bf30063, type: 2}
+  sqHostile: {fileID: 400000, guid: d3840d8a9aa19ff4fb99abfcad4ee40c, type: 2}
+  sqAbRange: {fileID: 439886, guid: a95e53c1235521246aa4ef50027af06e, type: 2}
+  sqAbTarget: {fileID: 400000, guid: b732afa2e871c1346be02e2746dd47ec, type: 2}
+  hexFogObj: {fileID: 420186, guid: eb2e70c5515d54f40956a24591f7bbf6, type: 2}
+  sqFogObj: {fileID: 439886, guid: a996852257a98094c9192b9e7aeeb297, type: 2}
+  coverOverlayH: {fileID: 400002, guid: 002d93a05eb59c6438aace7dd69f5a61, type: 2}
+  coverOverlayF: {fileID: 400000, guid: 76834c56500e4ff4baeaf8afe6e0c897, type: 2}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 114330}
+  m_IsPrefabAsset: 1
