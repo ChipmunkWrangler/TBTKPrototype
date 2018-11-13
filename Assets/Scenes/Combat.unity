@@ -23855,7 +23855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unit: {fileID: 0}
-  posOffset: -15
+  posOffset: 40
   sliderHP: {fileID: 1719013187}
   sliderAP: {fileID: 344367892}
   line: {fileID: 1510476801}
