@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBTKPrototype", "Assembly-CSharp.csproj", "{EEBD0C99-93C4-F2BF-3DFB-93CAEB995B16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{EEBD0C99-93C4-F2BF-3DFB-93CAEB995B16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBTKPrototype", "Assembly-CSharp-firstpass.csproj", "{8EBDE521-9F09-0E3B-2964-EFB4B1E004AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{8EBDE521-9F09-0E3B-2964-EFB4B1E004AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TBTKPrototype", "Assembly-CSharp-Editor.csproj", "{484F3B4A-60BD-BF0C-B951-17F647490624}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{484F3B4A-60BD-BF0C-B951-17F647490624}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
