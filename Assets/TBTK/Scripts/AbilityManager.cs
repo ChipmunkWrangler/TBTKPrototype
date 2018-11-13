@@ -224,10 +224,10 @@ namespace TBTK{
 		
 //****************************************************************************************************************************************
 		
-		public static void ApplyAbilityEffect(Tile targetTile, Ability ability, int type, Unit srcUnit=null){
-			instance.StartCoroutine(instance._ApplyAbilityEffect(targetTile, ability, type, srcUnit));
+		public static void ApplyAbilityEffect(Tile targetTile, Ability ability, int type, Unit srcUnit = null, float critMult = 1.0f){
+			instance.StartCoroutine(instance._ApplyAbilityEffect(targetTile, ability, type, srcUnit, critMult));
 		}
-		IEnumerator _ApplyAbilityEffect(Tile targetTile, Ability ability, int type, Unit srcUnit=null){
+		IEnumerator _ApplyAbilityEffect(Tile targetTile, Ability ability, int type, Unit srcUnit = null, float critMult = 1.0f){
 			if(targetTile!=null && ability.effectObject!=null){
 				if(!ability.autoDestroyEffect) ObjectPoolManager.Spawn(ability.effectObject, targetTile.GetPos(), Quaternion.identity);
 				else ObjectPoolManager.Spawn(ability.effectObject, targetTile.GetPos(), Quaternion.identity, ability.effectObjectDuration);
@@ -254,7 +254,7 @@ namespace TBTK{
 				if(ability.effTargetType==_EffectTargetType.AllUnit){
 					for(int i=0; i<tileList.Count; i++){
 						if(tileList[i].unit==null) continue;
-						tileList[i].unit.ApplyEffect(ability.CloneEffect(), srcUnit);
+						tileList[i].unit.ApplyEffect(ability.CloneEffect(critMult), srcUnit);
 						SpawnEffectObjTarget(ability, tileList[i]);
 					}
 				}
@@ -262,7 +262,7 @@ namespace TBTK{
 					for(int i=0; i<tileList.Count; i++){
 						if(tileList[i].unit==null) continue;
 						if(tileList[i].unit.factionID==ability.factionID) continue;
-						tileList[i].unit.ApplyEffect(ability.CloneEffect(), srcUnit);
+						tileList[i].unit.ApplyEffect(ability.CloneEffect(critMult), srcUnit);
 						SpawnEffectObjTarget(ability, tileList[i]);
 					}
 				}
@@ -270,13 +270,13 @@ namespace TBTK{
 					for(int i=0; i<tileList.Count; i++){
 						if(tileList[i].unit==null) continue;
 						if(tileList[i].unit.factionID!=ability.factionID) continue;
-						tileList[i].unit.ApplyEffect(ability.CloneEffect(), srcUnit);
+						tileList[i].unit.ApplyEffect(ability.CloneEffect(critMult), srcUnit);
 						SpawnEffectObjTarget(ability, tileList[i]);
 					}
 				}
 				else if(ability.effTargetType==_EffectTargetType.Tile){
 					for(int i=0; i<tileList.Count; i++){
-						tileList[i].ApplyEffect(ability.CloneEffect());
+						tileList[i].ApplyEffect(ability.CloneEffect(critMult));
 						SpawnEffectObjTarget(ability, tileList[i]);
 					}
 				}
@@ -303,7 +303,7 @@ namespace TBTK{
 				for(int i=0; i<targetTileList.Count; i++) targetTileList[i].ForceVisible(ability.effect.duration);
 			}
 			else if(type==4){	//_AbilityType.Overwatch
-				targetTile.unit.Overwatch(ability.CloneEffect());
+				targetTile.unit.Overwatch(ability.CloneEffect(critMult));
 			}
 			else if(type==5){	//_AbilityType.Teleport
 				Quaternion wantedRot=Quaternion.LookRotation(targetTile.GetPos()-ability.unit.tile.GetPos());
@@ -324,7 +324,7 @@ namespace TBTK{
 						float dist=Vector3.Distance(srcUnit.thisT.position, tileList[i].GetPos());
 						if(dist<0.05f){
 							if(tileList[i].unit!=null){
-								tileList[i].unit.ApplyEffect(ability.CloneEffect());
+								tileList[i].unit.ApplyEffect(ability.CloneEffect(critMult));
 								SpawnEffectObjTarget(ability, tileList[i]);
 							}
 							break;
@@ -348,7 +348,7 @@ namespace TBTK{
 				List<Tile> tileList=GridManager.GetTilesInALine(srcUnit.tile, targetTile, ability.GetRange());
 				for(int i=0; i<tileList.Count; i++){
 					if(tileList[i].unit==null) continue;
-					tileList[i].unit.ApplyEffect(ability.CloneEffect());
+					tileList[i].unit.ApplyEffect(ability.CloneEffect(critMult));
 					SpawnEffectObjTarget(ability, tileList[i]);
 				}
 			}

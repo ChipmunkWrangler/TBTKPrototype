@@ -376,7 +376,7 @@ namespace TBTK{
 		
 		
 		
-		public Effect CloneEffect(){
+		public Effect CloneEffect(float critMult){
 			Effect eff=new Effect();
 			
 			//eff.prefabID=prefabID;
@@ -388,8 +388,8 @@ namespace TBTK{
 			eff.duration=GetEffDuration();//effect.duration;//GetDuration();
 			
 			eff.damageType=effect.damageType;
-			eff.HPMin=GetEffHPMin();	//direct dmg/gain for the HP
-			eff.HPMax=GetEffHPMax();
+			eff.HPMin=GetEffHPMin() * critMult;	//direct dmg/gain for the HP
+			eff.HPMax=GetEffHPMax() * critMult;
 			
 			eff.APMin=GetEffAPMin();	//direct dmg/gain for the AP
 			eff.APMax=GetEffAPMax();

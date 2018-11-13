@@ -10827,8 +10827,8 @@ MonoBehaviour:
   flankingAngle: 120
   flankingBonus: 0.5
   enableActionCam: 1
-  actionCamFreqAttack: 0.25
-  actionCamFreqAbility: 0.5
+  actionCamFreqAttack: 0
+  actionCamFreqAbility: 1
   nextScene: DemoCampaign
   mainMenu: DemoMenu
 --- !u!114 &538214900

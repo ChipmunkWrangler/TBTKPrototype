@@ -469,28 +469,40 @@ namespace TBTK{
 			if(!ability.enableAbilityAfterCast) abilityRemain=0;
 			
 			TurnControl.CheckPlayerMoveFlag();
+			bool isHit = IsHit(ability);
+			bool isCrit = isHit && IsCrit();
 			
 			if(ability.normalAttack){
 				OverlayManager.ClearSelection();
 				
 				GameObject shootObj=ability.shootObject;
-				if(shootObj==null) shootObj=GameControl.GetDefaultShootObject();
+				if(shootObj==null) shootObj=GameControl.GetDefaultShootObject();			
+				if (isCrit && onActionCamE!=null) 
+				{					
+					onActionCamE(this, targetTile.GetPos(), GameControl.GetAbilityActionCamFreq());
+				}
 				
-				if(onActionCamE!=null) onActionCamE(this, targetTile.GetPos(), GameControl.GetAbilityActionCamFreq());
-				
-				StartCoroutine(AttackRoutineAbility(targetTile, targetTile.unit, shootObj, index));
+				StartCoroutine(AttackRoutineAbility(targetTile, targetTile.unit, shootObj, index, isHit, isCrit));
 			}
 			else{
-				float delay=AbilityHit(index);
+				float delay=AbilityHit(index, isHit, isCrit);
 				StartCoroutine(DelayFinishAction(delay));
 			}
 		}
-		//callback function when the shootObject of an ability which require shoot hits it's target
-		public float AbilityHit(int index){
+
+		private bool IsHit(Ability ability) {
 			float targetDodgeChance = abilityTargetedTile.unit.GetDodgeChance(); // PROTOTYPE HACK Dodge chance affects abilties
 			Debug.Log("Dodge chance " + targetDodgeChance);
 			Debug.Log("Hit chance " + GetHitChance());
-			if(Random.value>abilityList[index].chanceToHit * (GetHitChance() - targetDodgeChance))  // PROTOYPE HACK: Ability chanceToHit is a multiplier to normal chance to hit. Note that a negative dodge chance makes you easier to hit!
+			return Random.value <= ability.chanceToHit * (GetHitChance() - targetDodgeChance); // PROTOYPE HACK: Ability chanceToHit is a multiplier to normal chance to hit. Note that a negative dodge chance makes you easier to hit!
+		}
+
+		private bool IsCrit() {
+			return Random.Range(0f, 1f)<GetCritChance();
+		}
+		//callback function when the shootObject of an ability which require shoot hits its target
+		public float AbilityHit(int index, bool isHit, bool isCrit){
+			if(!isHit) 
 			{
 				abilityTargetedTile.GetPos();
 				new TextOverlay(abilityTargetedTile.GetPos(), "missed", Color.white);
@@ -499,8 +511,9 @@ namespace TBTK{
 			
 			if(abilityList[index].applyToAllUnit) abilityTargetedTile=null;
 			
+			float critMult = isCrit ? GetCritMultiplier() : 1.0f;
 			//~ AbilityManagerUnit.ApplyAbilityEffect(this, abilityTargetedTile, abilityList[index]);
-			AbilityManagerUnit.ApplyAbilityEffect(abilityTargetedTile, abilityList[index], (int)abilityList[index].type, this);
+			AbilityManagerUnit.ApplyAbilityEffect(abilityTargetedTile, abilityList[index], (int)abilityList[index].type, this, critMult);
 			return abilityList[index].effectDelayDuration;
 		}
 		
@@ -757,9 +770,8 @@ namespace TBTK{
 		
 		
 		//for ability
-		public IEnumerator AttackRoutineAbility(Tile targetTile, Unit targetUnit, GameObject shootObj, int abilityIndex){
+		public IEnumerator AttackRoutineAbility(Tile targetTile, Unit targetUnit, GameObject shootObj, int abilityIndex, bool isHit, bool isCrit){
 			Debug.Log("AttackRoutineAbility");
-			
 			while(!TurnControl.ClearToProceed()) yield return null;
 			TurnControl.ActionCommenced();
 			
@@ -783,7 +795,7 @@ namespace TBTK{
 			
 			while(waitingForAbilityHit) yield return null;
 			
-			float abilityEffectDelay=AbilityHit(abilityIndex);
+			float abilityEffectDelay=AbilityHit(abilityIndex, isHit, isCrit);
 			
 			TurnControl.ActionCompleted(abilityEffectDelay);
 			FinishAction();

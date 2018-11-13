@@ -121,8 +121,8 @@ MonoBehaviour:
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
-    normalAttack: 0
-    requireDirectLOS: 1
+    normalAttack: 1
+    requireDirectLOS: 0
   - prefabID: 8
     icon: {fileID: 21300000, guid: d90b9ef4907e8ca49b32dac8e5082f3b, type: 3}
     name: AOE Damage
@@ -203,7 +203,7 @@ MonoBehaviour:
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
-    normalAttack: 0
+    normalAttack: 1
     requireDirectLOS: 0
   - prefabID: 1
     icon: {fileID: 21300000, guid: bab271d6520555840aac48036865e1a6, type: 3}
@@ -308,7 +308,7 @@ MonoBehaviour:
     targetType: 1
     range: 5
     aoeRange: 0
-    shootObject: {fileID: 0}
+    shootObject: {fileID: 100004, guid: aad4adc792154404ca0b557b0bc5a72a, type: 2}
     enableMoveAfterCast: 0
     enableAttackAfterCast: 0
     enableAbilityAfterCast: 1
@@ -367,7 +367,7 @@ MonoBehaviour:
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
-    normalAttack: 0
+    normalAttack: 1
     requireDirectLOS: 0
   - prefabID: 3
     icon: {fileID: 21300000, guid: 37dd1af1050c7d54eb8fb0099c00b08d, type: 3}
