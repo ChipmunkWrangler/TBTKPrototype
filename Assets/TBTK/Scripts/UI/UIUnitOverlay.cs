@@ -15,6 +15,8 @@ namespace TBTK {
 		
 		public Slider sliderHP;
 		public Slider sliderAP;
+		public Text textHP;
+		public Text textAP;
 		
 		public GameObject line;
 		
@@ -48,6 +50,8 @@ namespace TBTK {
 			
 			sliderHP.value=unit.GetHPRatio();
 			sliderAP.value=unit.GetAPRatio();
+			textHP.text = unit.HP + " / " + unit.GetFullHP();
+			textAP.text = unit.AP + " / " + unit.GetFullAP();
 			
 			canvasGroup.alpha=(unit.thisObj.layer==TBTK.GetLayerUnitInvisible() ? 0 :  1);
 			
