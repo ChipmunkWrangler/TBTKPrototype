@@ -181,6 +181,7 @@ namespace TBTK{
 		
 		public float GetFlankingBonus(){ return flankingBonus+GetEffFlankingBonus()+PerkManager.GetUnitFlankingBonus(prefabID); }
 		public float GetFlankedModifier(){ return flankedModifier+GetEffFlankedModifier()+PerkManager.GetUnitFlankedModifier(prefabID); }
+		public float GetArmorPenalty(){ return GetEffArmorPenalty(); }
 		
 		public float GetHPRatio(){
 			var full=GetFullHP();
@@ -239,7 +240,9 @@ namespace TBTK{
 		public void ApplyEffect(Effect eff, Unit srcUnit=null){
 			// if(FactionManager.GetSelectedFactionID()!=factionID) eff.duration+=1; // PROTOTYPE HACK not sure what this was supposed to accomplish
 			
+
 			float HPVal=Random.Range(eff.HPMin, eff.HPMax);
+			HPVal *= (1.0f + GetArmorPenalty());
 			if(HPVal<0){
 				/*
 				if(GameControl.EnableFlanking() && srcUnit!=null){
@@ -334,6 +337,8 @@ namespace TBTK{
 				
 				activeEffect.flankingBonus+=effectList[i].flankingBonus;
 				activeEffect.flankedModifier+=effectList[i].flankedModifier;
+
+				activeEffect.armorPenalty+=effectList[i].armorPenalty;
 			}
 			
 			if(GameControl.GetSelectedUnit()==this && RequireReselect()) GameControl.ReselectUnit();
@@ -390,6 +395,7 @@ namespace TBTK{
 		float GetEffFlankingBonus(){ return activeEffect.flankingBonus; }
 		float GetEffFlankedModifier(){ return activeEffect.flankedModifier; }
 		
+		float GetEffArmorPenalty() { return activeEffect.armorPenalty; }
 		//end ability effect section
 		//********************************************************************************************************************************
 		
@@ -1062,7 +1068,7 @@ namespace TBTK{
 			if(unitAudio!=null) unitAudio.Hit();
 			if(unitAnim!=null) unitAnim.Hit();
 			
-			ApplyDamage(attInstance.damage, attInstance.critical, dontDestroyUnit);
+			ApplyDamage(attInstance.damage * (1.0f + GetArmorPenalty()), attInstance.critical, dontDestroyUnit);
 			
 			if(attInstance.stunned) ApplyEffect(attInstance.srcUnit.GetStunEffect());
 			

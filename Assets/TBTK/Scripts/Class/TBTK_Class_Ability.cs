@@ -29,7 +29,8 @@ namespace TBTK{
 		
 		public bool stun=false;
 		public bool silence=false;
-		
+
+		public float armorPenalty=0;	
 		public Effect Clone(string newName=""){
 			Effect eff=new Effect();
 			
@@ -90,6 +91,8 @@ namespace TBTK{
 			
 			eff.flankingBonus=flankingBonus;
 			eff.flankedModifier=flankedModifier;
+
+			eff.armorPenalty=armorPenalty;
 			
 			return eff;
 		}
@@ -373,7 +376,8 @@ namespace TBTK{
 		public float GetEffFlankingBonus(){ return effect.flankingBonus+PerkManager.GetAbilityFlankingBonus(prefabID, isFactionAbility); }		
 		public float GetEffFlankedModifier(){ return effect.flankedModifier+PerkManager.GetAbilityFlankedModifier(prefabID, isFactionAbility); }	
 		
-		
+		public float GetEffArmorPenalty(){ return effect.armorPenalty; }		
+
 		
 		
 		public Effect CloneEffect(float critMult){
@@ -438,6 +442,7 @@ namespace TBTK{
 			eff.flankingBonus=GetEffFlankingBonus();
 			eff.flankedModifier=GetEffFlankedModifier();
 			
+			eff.armorPenalty=GetEffArmorPenalty();
 			return eff;
 		}
 		

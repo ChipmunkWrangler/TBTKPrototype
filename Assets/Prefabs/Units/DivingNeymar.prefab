@@ -487,6 +487,7 @@ MonoBehaviour:
     APMax: 0
     stun: 0
     silence: 0
+    armorPenalty: 0
   abilityIDList: 000000000800000002000000
   abilityList: []
   thisT: {fileID: 0}

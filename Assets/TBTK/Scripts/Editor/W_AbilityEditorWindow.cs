@@ -257,6 +257,13 @@ namespace TBTK {
 				EditorGUI.LabelField(new Rect(startX, startY+=spaceY, width, height), cont);
 				effect.flankedModifier=EditorGUI.FloatField(new Rect(startX+spaceX, startY, widthS, height), effect.flankedModifier);
 				
+				startY+=5;
+				
+				cont=new GUIContent("Armor Penalty:", "Multiplier to damage taken by the target. 0.2 => increase future damage taken by 20%");
+				EditorGUI.LabelField(new Rect(startX, startY+=spaceY, width, height), cont);
+				effect.armorPenalty=EditorGUI.FloatField(new Rect(startX+spaceX, startY, widthS, height), effect.armorPenalty);
+				
+
 				startX-=15;
 			}
 			

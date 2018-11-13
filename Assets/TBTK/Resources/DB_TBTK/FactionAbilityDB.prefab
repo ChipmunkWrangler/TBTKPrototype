@@ -118,6 +118,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 1
@@ -198,6 +199,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 4
@@ -278,6 +280,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 2
@@ -357,6 +360,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 3
@@ -436,6 +440,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 3
   - prefabID: 5
@@ -516,6 +521,7 @@ MonoBehaviour:
       APMax: 0
       stun: 1
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 6
@@ -595,6 +601,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 7
@@ -674,6 +681,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 11400000, guid: cd371da9d8d9da04ab38bde341107ae5, type: 2}
     type: 2
   - prefabID: 8
@@ -753,6 +761,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 9
@@ -832,6 +841,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 10
@@ -911,6 +921,7 @@ MonoBehaviour:
       APMax: 10
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 11
@@ -990,6 +1001,7 @@ MonoBehaviour:
       APMax: 10
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 12
@@ -1069,6 +1081,7 @@ MonoBehaviour:
       APMax: 10
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 13
@@ -1148,6 +1161,7 @@ MonoBehaviour:
       APMax: 10
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   - prefabID: 14
@@ -1227,6 +1241,7 @@ MonoBehaviour:
       APMax: 10
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
   factionAbilityList:
@@ -1307,6 +1322,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
   - prefabID: 1
@@ -1387,6 +1403,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
   - prefabID: 4
@@ -1467,6 +1484,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
   - prefabID: 2
@@ -1546,6 +1564,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
   - prefabID: 3
@@ -1625,6 +1644,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 2
   - prefabID: 5
@@ -1704,6 +1724,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
   - prefabID: 6
@@ -1783,6 +1804,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
 --- !u!1001 &100100000

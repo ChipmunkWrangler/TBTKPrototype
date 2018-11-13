@@ -118,6 +118,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -200,6 +201,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -282,6 +284,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -290,7 +293,7 @@ MonoBehaviour:
   - prefabID: 2
     icon: {fileID: 21300000, guid: ad861e0b83230914794ae9c95fd294f0, type: 3}
     name: Big Zap
-    desp: Double damage and reduce enemy dodge chance by 25% for one turn.
+    desp: Increase future damage received by 50%.
     isFactionAbility: 0
     onlyAvailableViaPerk: 0
     factionID: 0
@@ -338,7 +341,7 @@ MonoBehaviour:
       damageMin: 0
       damageMax: 0
       hitChance: 0
-      dodgeChance: -0.25
+      dodgeChance: 0
       critChance: 0
       critAvoidance: 0
       critMultiplier: 0
@@ -364,6 +367,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0.5
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -446,6 +450,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -528,6 +533,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 5
     applyToAllUnit: 0
@@ -610,6 +616,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 3
     applyToAllUnit: 0
@@ -692,6 +699,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -774,6 +782,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -857,6 +866,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -940,6 +950,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -1023,6 +1034,7 @@ MonoBehaviour:
       APMax: 0
       stun: 1
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -1106,6 +1118,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -1188,6 +1201,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 4
     applyToAllUnit: 0
@@ -1271,6 +1285,7 @@ MonoBehaviour:
       APMax: 0
       stun: 1
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -1353,6 +1368,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -1436,6 +1452,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -1519,6 +1536,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -1601,6 +1619,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -1683,6 +1702,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 1
     applyToAllUnit: 0
@@ -1765,6 +1785,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 3
     applyToAllUnit: 0
@@ -1847,6 +1868,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -1929,6 +1951,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -2011,6 +2034,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -2093,6 +2117,7 @@ MonoBehaviour:
       APMax: 0
       stun: 0
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
@@ -2175,6 +2200,7 @@ MonoBehaviour:
       APMax: 0
       stun: 2
       silence: 0
+      armorPenalty: 0
     spawnUnit: {fileID: 0}
     type: 0
     applyToAllUnit: 0
