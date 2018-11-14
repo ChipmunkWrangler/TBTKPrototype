@@ -38509,7 +38509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5.0000763}
+  m_AnchoredPosition: {x: 0, y: 5.00016}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1940814953
@@ -41003,14 +41003,14 @@ MonoBehaviour:
   hexHostile: {fileID: 400000, guid: 3d5d024fd3219d9439e0b5a8b8e8d83d, type: 2}
   hexAbRange: {fileID: 439414, guid: a794404b948b3a04185aa12db9ca723d, type: 2}
   hexAbTarget: {fileID: 400000, guid: 043fa3a41898b3b439aa5f10cfb5a64e, type: 2}
-  sqCursorF: {fileID: 400000, guid: 3caba98ca1ad2014697d07979229eabd, type: 2}
-  sqCursorH: {fileID: 400000, guid: 62462b2655ac43f4f9c93ef13840daca, type: 2}
+  sqCursorF: {fileID: 439886, guid: e8a78b91bd4fc4d60bce9251a191bbf4, type: 2}
+  sqCursorH: {fileID: 439886, guid: e8a78b91bd4fc4d60bce9251a191bbf4, type: 2}
   sqSelected: {fileID: 400000, guid: 7a3a7ba87dd9ef34197a4d4f9e7c6595, type: 2}
   sqDeployment: {fileID: 439886, guid: a95e53c1235521246aa4ef50027af06e, type: 2}
   sqMoveable: {fileID: 439886, guid: 497083e7bd83e3b448093ae83bf30063, type: 2}
-  sqHostile: {fileID: 400000, guid: d3840d8a9aa19ff4fb99abfcad4ee40c, type: 2}
-  sqAbRange: {fileID: 439886, guid: a95e53c1235521246aa4ef50027af06e, type: 2}
-  sqAbTarget: {fileID: 400000, guid: b732afa2e871c1346be02e2746dd47ec, type: 2}
+  sqHostile: {fileID: 439886, guid: e8a78b91bd4fc4d60bce9251a191bbf4, type: 2}
+  sqAbRange: {fileID: 439886, guid: e8a78b91bd4fc4d60bce9251a191bbf4, type: 2}
+  sqAbTarget: {fileID: 439886, guid: e8a78b91bd4fc4d60bce9251a191bbf4, type: 2}
   hexFogObj: {fileID: 420186, guid: eb2e70c5515d54f40956a24591f7bbf6, type: 2}
   sqFogObj: {fileID: 439886, guid: a996852257a98094c9192b9e7aeeb297, type: 2}
   coverOverlayH: {fileID: 400002, guid: 002d93a05eb59c6438aace7dd69f5a61, type: 2}
