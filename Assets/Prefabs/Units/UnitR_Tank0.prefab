@@ -426,7 +426,7 @@ MonoBehaviour:
   APPerTurn: 0
   moveAPCost: 2
   attackAPCost: 6
-  turnPriority: 5
+  turnPriority: 9
   moveRange: 3
   attackRange: 3
   attackRangeMin: 0
