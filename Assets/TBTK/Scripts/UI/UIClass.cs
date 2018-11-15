@@ -72,12 +72,13 @@ namespace TBTK {
 			return new UIObject(newObj);
 		}
 		
-		public void SetCallback(Callback enter=null, Callback exit=null, CallbackInputDependent down=null, CallbackInputDependent up=null){
+		public void SetCallback(Callback enter=null, Callback exit=null, CallbackInputDependent down=null, CallbackInputDependent up=null, Callback hold = null){
 			itemCallback=rootObj.AddComponent<UIItemCallback>();
 			itemCallback.SetEnterCallback(enter);
 			itemCallback.SetExitCallback(exit);
 			itemCallback.SetDownCallback(down);
 			itemCallback.SetUpCallback(up);
+			itemCallback.SetHoldCallback(hold);
 		}
 		
 	}
@@ -206,19 +207,41 @@ namespace TBTK {
 		private Callback exitCB;
 		private CallbackInputDependent downCB;
 		private CallbackInputDependent upCB;
+		private Callback holdCB;
+
+		private float downTime = -1f;
+		private float holdThreshhold = 1.0f;
 		
 		public void SetEnterCallback(Callback callback){ enterCB=callback; }
 		public void SetExitCallback(Callback callback){ exitCB=callback; }
 		public void SetDownCallback(CallbackInputDependent callback){ downCB=callback; }
 		public void SetUpCallback(CallbackInputDependent callback){ upCB=callback; }
+		public void SetHoldCallback(Callback callback) { holdCB = callback; }
 		
 		public void OnPointerEnter(PointerEventData eventData){ if(enterCB!=null) enterCB(thisObj); }
 		public void OnPointerExit(PointerEventData eventData){ if(exitCB!=null) exitCB(thisObj); }
-		public void OnPointerDown(PointerEventData eventData){ if(downCB!=null) downCB(thisObj, eventData.pointerId); }
-		public void OnPointerUp(PointerEventData eventData){ if(upCB!=null) upCB(thisObj, eventData.pointerId); }
+		public void OnPointerDown(PointerEventData eventData){ 
+			if(downCB!=null) {
+				downCB(thisObj, eventData.pointerId); 
+			}
+			downTime = Time.time; // won't handle multitouch correctly, but it's a prototype HACK
+		}
+		public void OnPointerUp(PointerEventData eventData){ 
+			if(upCB!=null) 
+			{
+				upCB(thisObj, eventData.pointerId);
+		 	}
+			downTime = -1f;
+		}
 		
 		private GameObject thisObj;
 		void Awake(){ thisObj=gameObject; }
+		void Update() {
+			if (holdCB != null && downTime > 0 && Time.time - downTime > holdThreshhold)
+			{
+				holdCB(thisObj);
+			}
+		}
 	}
 
 }

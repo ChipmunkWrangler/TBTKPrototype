@@ -38,7 +38,7 @@ namespace TBTK {
 				if(i==0) buttonList[0].Init();
 				else if(i>0) buttonList.Add(UIButton.Clone(buttonList[0].rootObj, "AbilityButton"+(i+1)));
 				
-				if(UIMainControl.InTouchMode()) buttonList[i].SetCallback(null, null, this.OnAbilityButton, null);
+				if(UIMainControl.InTouchMode()) buttonList[i].SetCallback(null, null, this.OnAbilityButton, this.OnReleaseAbilityButton, this.OnHoldAbilityButton);
 				else buttonList[i].SetCallback(this.OnHoverButton, this.OnExitButton, this.OnAbilityButton, null);
 				
 				buttonList[i].rootObj.SetActive(false);
@@ -123,19 +123,59 @@ namespace TBTK {
 		public void OnAbilityButton(GameObject butObj, int pointerID=-1){
 			int ID=GetButtonID(butObj);
 			
-			if(UIMainControl.InTouchMode()){
+			if(UIMainControl.InTouchMode())
+			{
 				if(currentButtonID>=0) buttonList[currentButtonID].imgHighlight.enabled=false;
-				if(currentButtonID!=ID){
-					currentButtonID=ID;
-					buttonList[ID].imgHighlight.enabled=true;
-					OnHoverButton(butObj);
-					return;
-				}
-				ClearTouchModeButton();
+				currentButtonID=ID;						
+				buttonList[ID].imgHighlight.enabled=true;
 			}
-			
-			string exception=GameControl.GetSelectedUnit().SelectAbility(ID);
-			if(exception!="") UIMessage.DisplayMessage(exception);
+			else
+			{			
+				string exception=GameControl.GetSelectedUnit().SelectAbility(ID);
+				if(exception!="") UIMessage.DisplayMessage(exception);
+			}
+		}
+
+		public void OnHoldAbilityButton(GameObject butObj) 
+		{
+			if(UIMainControl.InTouchMode() && !tooltipObj.activeSelf)
+			{
+				OnHoverButton(butObj);				
+			}
+		}
+
+		public void OnReleaseAbilityButton(GameObject butObj, int pointId = -1)
+		{
+			if(UIMainControl.InTouchMode())
+			{
+				if (tooltipObj.activeSelf)
+				{
+					OnExitButton(null);
+					if(currentButtonID>=0) buttonList[currentButtonID].imgHighlight.enabled=false;
+					currentButtonID = -1;
+				}
+				else
+				{
+					int ID=GetButtonID(butObj);
+					if(currentButtonID==ID){ // this check is BS because the buttons seem to capture focus, but leave it in since it doesn't break anything HACK
+						string exception=GameControl.GetSelectedUnit().SelectAbility(ID);
+						if(exception!="") 
+						{
+							UIMessage.DisplayMessage(exception);
+							buttonList[currentButtonID].imgHighlight.enabled=false;
+						}
+						else 
+						{
+							bool isInTargetMode=GameControl.GetSelectedUnit().abilityList[ID].requireTargetSelection;
+							if (!isInTargetMode)
+							{
+								buttonList[currentButtonID].imgHighlight.enabled=false;
+								currentButtonID = -1;
+							} 
+						}						
+					}
+				}
+			}
 		}
 		
 		public void ClearTouchModeButton(){
