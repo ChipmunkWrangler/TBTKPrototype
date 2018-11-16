@@ -12248,7 +12248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &508737678
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12305,21 +12305,6 @@ MonoBehaviour:
   lbEffectName: {fileID: 111917467}
   lbEffectDesp: {fileID: 154732030}
   lbEffectDuration: {fileID: 24388316}
-  buttonInfo:
-    rootObj: {fileID: 1211557849}
-    rootT: {fileID: 0}
-    rectT: {fileID: 0}
-    imgRoot: {fileID: 0}
-    imgIcon: {fileID: 0}
-    label: {fileID: 0}
-    itemCallback: {fileID: 0}
-    canvasG: {fileID: 0}
-    labelAlt: {fileID: 0}
-    labelAlt2: {fileID: 0}
-    imgHoverHighlight: {fileID: 0}
-    imgDisHighlight: {fileID: 0}
-    imgHighlight: {fileID: 0}
-    button: {fileID: 0}
 --- !u!1 &514069827
 GameObject:
   m_ObjectHideFlags: 0
@@ -15714,10 +15699,10 @@ RectTransform:
   m_Father: {fileID: 939668014}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 25, y: 5}
+  m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &677787351
 MonoBehaviour:
@@ -44376,7 +44361,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5.000084}
+  m_AnchoredPosition: {x: 0, y: 5.000099}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1940814953
