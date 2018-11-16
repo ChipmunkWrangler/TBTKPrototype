@@ -25,7 +25,7 @@ namespace TBTK {
 		public Text lbEffectDesp;
 		public Text lbEffectDuration;
 		
-		public UIButton buttonInfo;
+		// public UIButton buttonInfo;
 		
 		private Unit selectedUnit;
 		
@@ -59,8 +59,8 @@ namespace TBTK {
 			
 			effectTooltipObj.SetActive(false);
 			
-			buttonInfo.Init();
-			buttonInfo.SetActive(false);
+			// buttonInfo.Init();
+			// buttonInfo.SetActive(false);
 			
 			//canvasGroup.alpha=0;
 			//thisObj.SetActive(false);
@@ -125,7 +125,7 @@ namespace TBTK {
 					else itemList[i].rootObj.SetActive(false);
 				}
 				
-				buttonInfo.SetActive(true);
+				// buttonInfo.SetActive(true);
 			}
 			else{
 				imgIcon.sprite=null;
@@ -139,7 +139,7 @@ namespace TBTK {
 				
 				for(int i=0; i<itemList.Count; i++) itemList[i].rootObj.SetActive(false);
 				
-				buttonInfo.SetActive(false);
+				// buttonInfo.SetActive(false);
 			}
 		}
 		
@@ -155,7 +155,7 @@ namespace TBTK {
 			canvasGroup.blocksRaycasts=true;
 			
 			//UpdateDisplay(tile);
-			buttonInfo.SetActive(true);
+			// buttonInfo.SetActive(true);
 			
 			if(thisObj.activeInHierarchy) return;
 			UIMainControl.FadeIn(canvasGroup, 0.2f, thisObj);
@@ -166,7 +166,7 @@ namespace TBTK {
 			//StartCoroutine(DelayHide());
 		}
 		IEnumerator DelayHide(){
-			buttonInfo.SetActive(false);
+			// buttonInfo.SetActive(false);
 			
 			yield return new WaitForSeconds(0.2f);
 			
