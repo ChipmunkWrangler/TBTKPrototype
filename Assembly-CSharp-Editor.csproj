@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Editor\FindReferenceTool\FindReferenceContextCommand.cs" />
+     <Compile Include="Assets\Editor\FindReferenceTool\FindReferenceWindow.cs" />
      <Compile Include="Assets\Scripts\Editor\W_UnitAbilityEditorWindow.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\__MenuExtension.cs" />
      <Compile Include="Assets\TBTK\Scripts\Editor\__SupportContactWindow.cs" />
