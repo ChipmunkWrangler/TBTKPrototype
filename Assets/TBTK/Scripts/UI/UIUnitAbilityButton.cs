@@ -90,6 +90,7 @@ namespace TBTK {
 					else{
 						buttonList[i].imgIcon.sprite=abilityList[i].icon;
 						buttonList[i].button.interactable=(abilityList[i].IsAvailable()=="");
+						buttonList[i].label.text = abilityList[i].GetCost().ToString();
 						buttonList[i].SetActive(true);
 					}
 				}
