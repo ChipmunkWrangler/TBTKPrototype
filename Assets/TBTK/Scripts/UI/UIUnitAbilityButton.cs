@@ -13,6 +13,8 @@ namespace TBTK {
 		public UIButton buttonCancel;
 		
 		public List<UIButton> buttonList=new List<UIButton>();
+
+		public Text endTurnText;
 		
 		private GameObject thisObj;
 		private RectTransform rectT;
@@ -93,6 +95,10 @@ namespace TBTK {
 						buttonList[i].label.text = abilityList[i].GetCost().ToString();
 						buttonList[i].SetActive(true);
 					}
+				}
+
+				if (endTurnText != null) {
+					endTurnText.text = "End Turn " + unit.GetFullAP();
 				}
 			}
 		}

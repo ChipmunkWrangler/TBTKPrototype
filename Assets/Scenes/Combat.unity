@@ -46753,6 +46753,7 @@ MonoBehaviour:
     imgDisHighlight: {fileID: 0}
     imgHighlight: {fileID: 0}
     button: {fileID: 0}
+  endTurnText: {fileID: 1352479138}
   tooltipObj: {fileID: 441773917}
   lbTooltipName: {fileID: 225991276}
   lbTooltipDesp: {fileID: 944361900}
