@@ -508,8 +508,8 @@ MonoBehaviour:
   attackRangeMin: 0
   sight: 5
   movePerTurn: 0
-  attackPerTurn: 1
-  counterPerTurn: 1
+  attackPerTurn: 0
+  counterPerTurn: 0
   abilityPerTurn: 1
   moveRemain: 1
   attackRemain: 1
@@ -584,7 +584,7 @@ MonoBehaviour:
     stun: 0
     silence: 0
     armorPenalty: 0
-  abilityIDList: 
+  abilityIDList: 00000000
   abilityList: []
   thisT: {fileID: 0}
   thisObj: {fileID: 0}
