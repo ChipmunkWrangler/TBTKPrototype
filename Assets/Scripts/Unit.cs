@@ -1021,8 +1021,8 @@ namespace TBTK{
 		void FinishAction(){
 			if(isAIUnit) return;
 			
-			/*
 			GameControl.ReselectUnit();
+			/*
 			if(IsAllActionCompleted()){
 				FactionManager.UnitMoveDepleted(this);
 				TurnControl.SelectedUnitMoveDepleted();
