@@ -54,6 +54,10 @@ namespace TBTK {
 		
 		
 		private static UIMainControl instance;
+		private float holdStartedTime = -1f;
+		private const float holdThreshhold = 1f;
+		private Tile heldTile;
+
 		void Awake(){
 			instance=this;
 		}
@@ -97,6 +101,19 @@ namespace TBTK {
 					//~ Debug.Log("Distance: "+GridManager.GetDistance(hoveredTile, GameControl.GetSelectedUnit().tile)+"  "+hoveredTile+"  "+GameControl.GetSelectedUnit().tile);
 					//~ FogOfWar.InLOS(hoveredTile, GameControl.GetSelectedUnit().tile, true);
 				}
+
+				bool showUnitInfo = false;
+				if (Input.GetMouseButton(0))
+				{
+					showUnitInfo = OnLeftCursor(pointerID);
+				} else { 
+					heldTile = null;
+					holdStartedTime = -1f;
+				}
+				if (!showUnitInfo)
+				{
+					UIUnitInfo.Hide();
+				}
 			//~ }
 		}
 		
@@ -116,6 +133,31 @@ namespace TBTK {
 			//~ if(GridManager.GetHoveredTile()!=null) GridManager.OnCursorDown();
 			//~ ClearLastClickTile();
 		//~ }
+		bool OnLeftCursor(int pointer = -1) { // return true if we are showing the unit info
+			//yield return null;
+			
+			if(UI.IsCursorOnUI(pointer)) return false;
+			
+			Tile tile=GridManager.GetHoveredTile();
+			if(tile!=null && tile.unit!=null){
+				// UIUnitInfo.Hide();
+				if(touchMode && !GameControl.CanSelectUnit(tile.unit)) 
+				{
+					if (heldTile == tile)
+					{
+						if (holdStartedTime > 0 && Time.time - holdStartedTime > holdThreshhold)
+						{
+							UIUnitInfo.Show(tile);
+							return true;
+						}
+					} else {
+						heldTile = tile;
+						holdStartedTime = Time.time;
+					}
+				}					
+			}
+			return false;
+		}
 		IEnumerator OnLeftCursorDown(int pointer=-1){
 			yield return null;
 			
@@ -132,16 +174,6 @@ namespace TBTK {
 					GridManager.OnCursorDown();
 					yield break;
 				}
-				
-				if(tile.unit!=null){
-					if(touchMode && !GameControl.CanSelectUnit(tile.unit)) UIUnitInfo.Show(tile);
-					else{
-						GridManager.OnCursorDown();
-						UIUnitInfo.Hide();
-						yield break;
-					}
-				}
-				else UIUnitInfo.Hide();
 				
 				if(touchMode && GridManager.CanAttackTile(GridManager.GetHoveredTile())){
 					NewClickTile(tile);
