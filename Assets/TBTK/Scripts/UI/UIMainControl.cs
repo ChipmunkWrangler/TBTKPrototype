@@ -102,18 +102,8 @@ namespace TBTK {
 					//~ FogOfWar.InLOS(hoveredTile, GameControl.GetSelectedUnit().tile, true);
 				}
 
-				bool showUnitInfo = false;
-				if (Input.GetMouseButton(0))
-				{
-					showUnitInfo = OnLeftCursor(pointerID);
-				} else { 
-					heldTile = null;
-					holdStartedTime = -1f;
-				}
-				if (!showUnitInfo)
-				{
-					UIUnitInfo.Hide();
-				}
+				UpdateTapAndHold(Input.GetMouseButton(0), pointerID);
+				
 			//~ }
 		}
 		
@@ -133,30 +123,34 @@ namespace TBTK {
 			//~ if(GridManager.GetHoveredTile()!=null) GridManager.OnCursorDown();
 			//~ ClearLastClickTile();
 		//~ }
-		bool OnLeftCursor(int pointer = -1) { // return true if we are showing the unit info
-			//yield return null;
-			
-			if(UI.IsCursorOnUI(pointer)) return false;
-			
-			Tile tile=GridManager.GetHoveredTile();
-			if(tile!=null && tile.unit!=null){
-				// UIUnitInfo.Hide();
-				if(touchMode && !GameControl.CanSelectUnit(tile.unit)) 
+		void UpdateTapAndHold(bool isHeld, int pointerID) {
+			bool isHeldTileValid = false;
+			if (isHeld && !UI.IsCursorOnUI(pointerID)) 
+			{
+				Debug.LogWarning("TAH");
+				Tile tile=GridManager.GetHoveredTile();
+				if(tile!=null && tile.unit!=null) // && touchMode && !GameControl.CanSelectUnit(tile.unit)) 
 				{
 					if (heldTile == tile)
 					{
 						if (holdStartedTime > 0 && Time.time - holdStartedTime > holdThreshhold)
 						{
 							UIUnitInfo.Show(tile);
-							return true;
+							return;
 						}
-					} else {
+					} else	{
 						heldTile = tile;
 						holdStartedTime = Time.time;
 					}
+					isHeldTileValid = true;
 				}					
 			}
-			return false;
+			if (!isHeldTileValid)
+			{
+				heldTile = null;
+				holdStartedTime = -1f;			
+			}
+			UIUnitInfo.Hide();
 		}
 		IEnumerator OnLeftCursorDown(int pointer=-1){
 			yield return null;
