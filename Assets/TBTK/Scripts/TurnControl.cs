@@ -123,11 +123,12 @@ namespace TBTK{
 				CheckPlayerMoveFlag(false);
 				FactionManager.EndTurn_FactionUnitPerTurn();
 			}
-			else if(turnMode==_TurnMode.UnitPerTurn){
+
+			IterateEndTurn();
+			if(turnMode==_TurnMode.UnitPerTurn){
 				FactionManager.EndTurn_UnitPerTurn();
 			}
 			
-			IterateEndTurn();
 			
 			TBTK.OnNewTurn(IsPlayerTurn());
 		}
