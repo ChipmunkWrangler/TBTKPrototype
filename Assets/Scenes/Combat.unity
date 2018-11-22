@@ -31694,7 +31694,7 @@ MonoBehaviour:
   showContinueButtonWhenLost: 0
   touchMode: 1
   uiBlurEffect: {fileID: 799332258}
-  limitScale: 1
+  limitScale: 0
   scalerList:
   - {fileID: 29873643}
   - {fileID: 836293252}
