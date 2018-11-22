@@ -86,7 +86,9 @@ namespace TBTK {
 			//~ else{
 				if(Input.GetMouseButtonDown(0)) 
 					StartCoroutine(OnLeftCursorDown(pointerID));
-				
+				else
+					UpdateTapAndHold(Input.GetMouseButton(0), pointerID);
+
 				if(Input.GetMouseButtonDown(1)){
 					if(!touchMode){
 						Tile tile=GridManager.GetHoveredTile();
@@ -102,7 +104,7 @@ namespace TBTK {
 					//~ FogOfWar.InLOS(hoveredTile, GameControl.GetSelectedUnit().tile, true);
 				}
 
-				UpdateTapAndHold(Input.GetMouseButton(0), pointerID);
+
 				
 			//~ }
 		}
@@ -136,20 +138,12 @@ namespace TBTK {
 						if (holdStartedTime > 0 && Time.time - holdStartedTime > holdThreshhold)
 						{
 							UIUnitInfo.Show(tile);
-							return;
 						}
-					} else	{
-						heldTile = tile;
-						holdStartedTime = Time.time;
-					}
-					isHeldTileValid = true;
+						return;
+					} 
 				}					
 			}
-			if (!isHeldTileValid)
-			{
-				heldTile = null;
-				holdStartedTime = -1f;			
-			}
+			holdStartedTime = -1f;			
 			UIUnitInfo.Hide();
 		}
 		IEnumerator OnLeftCursorDown(int pointer=-1){
@@ -169,6 +163,9 @@ namespace TBTK {
 					yield break;
 				}
 				
+				heldTile = tile;
+				holdStartedTime = Time.time;
+
 				if(touchMode && GridManager.CanAttackTile(GridManager.GetHoveredTile())){
 					NewClickTile(tile);
 				}
