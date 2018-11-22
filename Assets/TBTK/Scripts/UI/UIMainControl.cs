@@ -129,7 +129,6 @@ namespace TBTK {
 			bool isHeldTileValid = false;
 			if (isHeld && !UI.IsCursorOnUI(pointerID)) 
 			{
-				Debug.LogWarning("TAH");
 				Tile tile=GridManager.GetHoveredTile();
 				if(tile!=null && tile.unit!=null) // && touchMode && !GameControl.CanSelectUnit(tile.unit)) 
 				{
