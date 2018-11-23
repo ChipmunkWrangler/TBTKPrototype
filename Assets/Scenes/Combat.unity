@@ -27679,7 +27679,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 205, y: 230}
-  m_SizeDelta: {x: 40, y: 0}
+  m_SizeDelta: {x: 50, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204403888
 MonoBehaviour:
@@ -27693,7 +27693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unit: {fileID: 0}
-  posOffset: 50
+  posOffset: 170
   sliderHP: {fileID: 1719013187}
   sliderAP: {fileID: 344367892}
   textHP: {fileID: 396752804}
