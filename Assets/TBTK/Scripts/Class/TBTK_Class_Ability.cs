@@ -157,6 +157,8 @@ namespace TBTK{
 		}
 		
 		public string IsAvailable(){
+			int limit=GetUseLimit();
+			if(limit>=1 && useCount>=limit) return "Ability is used up";
 			if(unit.abilityRemain<=0) return "Unit cannot use anymore ability for the turn";
 			if(unit.IsSilenced()) return "Unit is silenced";
 			if(unit.IsStunned()) return "Unit is stunned";
@@ -164,8 +166,6 @@ namespace TBTK{
 			if(unit.AP<GetCost()) return "Insufficient AP";
 			if(!currentCD.Due()) return "Ability on cooldown";
 			
-			int limit=GetUseLimit();
-			if(limit>=1 && useCount>=limit) return "Ability is used up";
 			
 			return "";
 		}

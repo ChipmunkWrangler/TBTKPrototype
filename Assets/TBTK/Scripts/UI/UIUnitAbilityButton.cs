@@ -90,11 +90,19 @@ namespace TBTK {
 						buttonList[i].SetActive(false);
 					}
 					else{
+						string exception = abilityList[i].IsAvailable();
+							if (exception=="Ability is used up")
+							{
+								buttonList[i].SetActive(false);
+							}
+							else 
+							{
 						buttonList[i].imgIcon.sprite=abilityList[i].icon;
-						buttonList[i].button.interactable=(abilityList[i].IsAvailable()=="");
+								buttonList[i].button.interactable=(exception=="");
 						buttonList[i].label.text = abilityList[i].GetCost().ToString();
 						buttonList[i].SetActive(true);
 					}
+				}
 				}
 
 				if (endTurnText != null) {
