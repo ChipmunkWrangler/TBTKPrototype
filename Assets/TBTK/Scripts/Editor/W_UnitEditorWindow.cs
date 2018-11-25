@@ -464,10 +464,10 @@ namespace TBTK {
 					index=EditorGUI.Popup(new Rect(startX+65, startY+=spaceY, width, height), index, uAbilityLabel);
 					if(index>0){
 						int abID=uAbilityDB.abilityList[index-1].prefabID;
-						if(!unit.abilityIDList.Contains(abID)){
+						//if(!unit.abilityIDList.Contains(abID)){
 							if(i<unit.abilityIDList.Count) unit.abilityIDList[i]=abID;
 							else unit.abilityIDList.Add(abID);
-						}
+						//}
 					}
 					else if(i<unit.abilityIDList.Count){ unit.abilityIDList.RemoveAt(i); i-=1; }
 					
@@ -515,10 +515,10 @@ namespace TBTK {
 					index=EditorGUI.Popup(new Rect(startX+65, startY+=spaceY, width, height), index, uAbilityLabel);
 					if(index>0){
 						int abID=uAbilityDB.abilityList[index-1].prefabID;
-						if(!unit.reserveAbilityIDList.Contains(abID)){
+						//if(!unit.reserveAbilityIDList.Contains(abID)){
 							if(i<unit.reserveAbilityIDList.Count) unit.reserveAbilityIDList[i]=abID;
 							else unit.reserveAbilityIDList.Add(abID);
-						}
+						//}
 					}
 					else if(i<unit.reserveAbilityIDList.Count){ unit.reserveAbilityIDList.RemoveAt(i); i-=1; }
 					
