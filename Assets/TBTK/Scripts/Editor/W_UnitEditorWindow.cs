@@ -431,7 +431,7 @@ namespace TBTK {
 		
 		private bool foldAbilities=true;
 		protected float DrawUnitAbilities(float startX, float startY, Unit unit){
-			string text="Unit Abilities "+(!foldAbilities ? "(show)" : "(hide)");
+			string text="Unit Hand Abilities "+(!foldAbilities ? "(show)" : "(hide)");
 			foldAbilities=EditorGUI.Foldout(new Rect(startX, startY, width, height), foldAbilities, text, foldoutStyle);
 			if(foldAbilities){
 				startX+=15;
@@ -452,7 +452,7 @@ namespace TBTK {
 					startY+=45-spaceY;
 				}
 				
-				cont=new GUIContent("Abilities:", "Abilities possesed by the unit");
+				cont=new GUIContent("Abilities:", "Abilities in the unit's starting hand");
 				EditorGUI.LabelField(new Rect(startX, startY+spaceY, width, height), cont);
 				
 				int count=Mathf.Min(unit.abilityIDList.Count+1, 6);
@@ -481,6 +481,56 @@ namespace TBTK {
 			return startY+spaceY;
 		}
 		
+		protected float DrawUnitReserveAbilities(float startX, float startY, Unit unit){
+			string text="Unit Deck Abilities "+(!foldAbilities ? "(show)" : "(hide)");
+			foldAbilities=EditorGUI.Foldout(new Rect(startX, startY, width, height), foldAbilities, text, foldoutStyle);
+			if(foldAbilities){
+				startX+=15;
+				
+				if(unit.reserveAbilityIDList.Count>0){
+					startY+=spaceY;
+					for(int i=0; i<unit.reserveAbilityIDList.Count; i++){
+						int index=TBEditor.GetUnitAbilityIndex(unit.reserveAbilityIDList[i]);
+						
+						if(index<0){ 
+							unit.reserveAbilityIDList.RemoveAt(i);
+							i-=1; 	continue;
+						}
+						
+						TBEditor.DrawSprite(new Rect(startX+(i*45), startY, 40, 40), uAbilityDB.abilityList[index-1].icon);
+					}
+					
+					startY+=45-spaceY;
+				}
+				
+				cont=new GUIContent("Abilities:", "Abilities in the common deck");
+				EditorGUI.LabelField(new Rect(startX, startY+spaceY, width, height), cont);
+				
+				int count=Mathf.Min(unit.reserveAbilityIDList.Count+1, 6);
+			
+				for(int i=0; i<count; i++){
+					EditorGUI.LabelField(new Rect(startX+55, startY+spaceY, width, height), "-");
+					
+					int index=(i<unit.reserveAbilityIDList.Count) ? TBEditor.GetUnitAbilityIndex(unit.reserveAbilityIDList[i]) : 0;
+					index=EditorGUI.Popup(new Rect(startX+65, startY+=spaceY, width, height), index, uAbilityLabel);
+					if(index>0){
+						int abID=uAbilityDB.abilityList[index-1].prefabID;
+						if(!unit.reserveAbilityIDList.Contains(abID)){
+							if(i<unit.reserveAbilityIDList.Count) unit.reserveAbilityIDList[i]=abID;
+							else unit.reserveAbilityIDList.Add(abID);
+						}
+					}
+					else if(i<unit.reserveAbilityIDList.Count){ unit.reserveAbilityIDList.RemoveAt(i); i-=1; }
+					
+					if(i<unit.reserveAbilityIDList.Count && GUI.Button(new Rect(startX+67+width, startY, 20, height-1), "-")){
+						unit.reserveAbilityIDList.RemoveAt(i); i-=1;
+					}
+				}
+				
+			}
+			
+			return startY+spaceY;
+		}
 		
 		Vector2 DrawUnitConfigurator(float startX, float startY, Unit unit){
 			float maxX=startX;
@@ -494,6 +544,7 @@ namespace TBTK {
 			startY=DrawUnitStats(startX, startY+spaceY, unit);
 			
 			startY=DrawUnitAbilities(startX, startY+spaceY, unit);
+			startY=DrawUnitReserveAbilities(startX, startY+spaceY, unit);
 			
 			GUIStyle style=new GUIStyle("TextArea");
 			style.wordWrap=true;

@@ -407,6 +407,7 @@ namespace TBTK{
 		//these section are related to UnitAbilities
 		
 		public List<int> abilityIDList=new List<int>();
+		public List<int> reserveAbilityIDList=new List<int>();
 		public List<UnitAbility> abilityList=new List<UnitAbility>();	//only used in runtime
 		public List<UnitAbility> GetAbilityList(){ return abilityList; }
 		
