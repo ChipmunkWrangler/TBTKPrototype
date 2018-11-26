@@ -36,7 +36,7 @@ namespace TBTK {
 		}
 		
 		void Start(){
-			for(int i=0; i<6; i++){
+			for(int i=0; i<12; i++){
 				if(i==0) buttonList[0].Init();
 				else if(i>0) buttonList.Add(UIButton.Clone(buttonList[0].rootObj, "AbilityButton"+(i+1)));
 				
@@ -98,7 +98,7 @@ namespace TBTK {
 							else 
 							{
 						buttonList[i].imgIcon.sprite=abilityList[i].icon;
-								buttonList[i].button.interactable=(exception=="");
+						buttonList[i].button.interactable=(exception=="");
 						buttonList[i].label.text = abilityList[i].GetCost().ToString();
 						buttonList[i].SetActive(true);
 					}
