@@ -592,6 +592,7 @@ MonoBehaviour:
     silence: 0
     armorPenalty: 0
   abilityIDList: 0d000000090000000600000002000000
+  reserveAbilityIDList: 
   abilityList: []
   thisT: {fileID: 0}
   thisObj: {fileID: 0}

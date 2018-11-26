@@ -533,7 +533,8 @@ MonoBehaviour:
     stun: 0
     silence: 0
     armorPenalty: 0
-  abilityIDList: 000000000100000008000000030000000200000004000000
+  abilityIDList: 000000000100000008000000030000000200000000000000
+  reserveAbilityIDList: 000000000800000001000000020000000300000003000000
   abilityList: []
   thisT: {fileID: 0}
   thisObj: {fileID: 0}
