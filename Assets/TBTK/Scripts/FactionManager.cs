@@ -384,7 +384,9 @@ namespace TBTK{
 			selectedFactionID=allUnitList[selectedUnitID].factionID;
 			
 			bool isUnitActive=allUnitList[selectedUnitID].NewTurn();	//in case unit is destroyed by damage over time effect
-			if(!isUnitActive){
+			if(isUnitActive){
+				allUnitList[selectedUnitID].DrawCard();
+			} else {
 				_EndTurn_UnitPerTurn();
 				return;
 			}

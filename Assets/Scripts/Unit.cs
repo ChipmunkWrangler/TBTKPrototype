@@ -1141,13 +1141,11 @@ namespace TBTK{
 				StartCoroutine(Dead());
 				return false;
 			}
-
-			DrawCard();
 			
 			return true;
 		}
 
-		private void DrawCard()
+		public void DrawCard()
 		{
 			Debug.LogWarning(this.name);
 			if (reserveAbilityIDList.Count > 0)
