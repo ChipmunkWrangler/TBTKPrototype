@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 using TBTK;
 
@@ -579,6 +580,7 @@ namespace TBTK{
 		void Start () {
 			HP=GetFullHP();
 			if(GameControl.RestoreUnitAPOnTurn()) AP=GetFullAP();
+			if (reserveAbilityIDList.Count > 0) canDrawCards = true;
 		}
 		
 		
@@ -1145,16 +1147,29 @@ namespace TBTK{
 			return true;
 		}
 
-		public void DrawCard()
+
+		public bool canDrawCards  {get; private set; } = false;
+
+		public static void DrawCard(List<Unit> unitsInFaction)
 		{
-			Debug.LogWarning(this.name);
-			if (reserveAbilityIDList.Count > 0)
-			{
-				int cardIdx = Random.Range(0, reserveAbilityIDList.Count);
-				Debug.LogWarning(cardIdx);
-				int newAbilityId = reserveAbilityIDList[cardIdx];
-				reserveAbilityIDList.RemoveAt(cardIdx);
-				AddAbility(newAbilityId);
+			int numAbilitiesInDeck = unitsInFaction.Select(unit => unit.reserveAbilityIDList.Count).Sum();
+			// Debug.LogWarning("num abilities in deck " + numAbilitiesInDeck);
+			if (numAbilitiesInDeck > 0)
+			{	
+				int cardIdx = Random.Range(0, numAbilitiesInDeck);
+				// Debug.LogWarning(cardIdx);
+				int cardOwnerIdx = 0;
+				while( cardIdx >= unitsInFaction[cardOwnerIdx].reserveAbilityIDList.Count) {
+					cardIdx -= unitsInFaction[cardOwnerIdx].reserveAbilityIDList.Count;
+					++cardOwnerIdx;
+				};
+				Unit cardOwner = unitsInFaction[cardOwnerIdx];
+				// Debug.LogWarning("card owner = " + cardOwner.unitName);
+				// Debug.LogWarning("card idx = " + cardIdx + "/" + cardOwner.reserveAbilityIDList.Count);
+				
+				int newAbilityId = cardOwner.reserveAbilityIDList[cardIdx];
+				cardOwner.reserveAbilityIDList.RemoveAt(cardIdx);
+				cardOwner.AddAbility(newAbilityId);
 			}
 		}		
 		public bool CanCounter(Unit unit){

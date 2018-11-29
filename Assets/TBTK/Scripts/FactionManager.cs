@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 using TBTK;
 
@@ -385,7 +386,9 @@ namespace TBTK{
 			
 			bool isUnitActive=allUnitList[selectedUnitID].NewTurn();	//in case unit is destroyed by damage over time effect
 			if(isUnitActive){
-				allUnitList[selectedUnitID].DrawCard();
+				// Debug.LogWarning(allUnitList[selectedUnitID].unitName + " "  + allUnitList[selectedUnitID].canDrawCards);
+				if (allUnitList[selectedUnitID].canDrawCards)
+					Unit.DrawCard(allUnitList.Where(u => u.factionID == selectedFactionID).ToList());
 			} else {
 				_EndTurn_UnitPerTurn();
 				return;
