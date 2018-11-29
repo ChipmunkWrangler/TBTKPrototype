@@ -126,7 +126,6 @@ namespace TBTK {
 			//~ ClearLastClickTile();
 		//~ }
 		void UpdateTapAndHold(bool isHeld, int pointerID) {
-			bool isHeldTileValid = false;
 			if (isHeld && !UI.IsCursorOnUI(pointerID)) 
 			{
 				Tile tile=GridManager.GetHoveredTile();
