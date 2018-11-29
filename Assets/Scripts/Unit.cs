@@ -420,7 +420,7 @@ namespace TBTK{
 			
 			List<int> perkAbilityXIDList=PerkManager.GetUnitAbilityXIDList(prefabID);
 			for(int i=0; i<perkAbilityXIDList.Count; i++) abilityIDList.Remove(perkAbilityXIDList[i]);
-			
+
 			abilityList=AbilityManagerUnit.GetAbilityListBasedOnIDList(abilityIDList);
 			for(int i=0; i<abilityList.Count; i++) abilityList[i].Init(this);
 		}
@@ -1141,10 +1141,24 @@ namespace TBTK{
 				StartCoroutine(Dead());
 				return false;
 			}
+
+			DrawCard();
 			
 			return true;
 		}
-		
+
+		private void DrawCard()
+		{
+			Debug.LogWarning(this.name);
+			if (reserveAbilityIDList.Count > 0)
+			{
+				int cardIdx = Random.Range(0, reserveAbilityIDList.Count);
+				Debug.LogWarning(cardIdx);
+				int newAbilityId = reserveAbilityIDList[cardIdx];
+				reserveAbilityIDList.RemoveAt(cardIdx);
+				AddAbility(newAbilityId);
+			}
+		}		
 		public bool CanCounter(Unit unit){
 			if(!GameControl.EnableCounter()) return false;
 			if(IsStunned()) return false;
