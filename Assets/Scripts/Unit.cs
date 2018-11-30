@@ -428,6 +428,8 @@ namespace TBTK{
 		public void AddAbility(int abilityID, int index=-1){
 			UnitAbility ability=AbilityManagerUnit.GetAbilityBasedOnID(abilityID);
 			if(ability==null) return;
+			Debug.LogWarning("Adding " + ability.name + " to " + this.unitName);
+
 			
 			ability.Init(this);
 			
@@ -1150,27 +1152,37 @@ namespace TBTK{
 
 		public bool canDrawCards  {get; private set; } = false;
 
-		public static void DrawCard(List<Unit> unitsInFaction)
+		public class AbilitySelection {
+			public AbilitySelection(Unit cardOwner, int abilityId) {
+				this.cardOwner = cardOwner;
+				this.abilityId = abilityId;
+			}
+			public Unit cardOwner {get; private set;}
+			public int abilityId {get; private set;}
+		};
+
+		public static AbilitySelection DrawCard(List<Unit> unitsInFaction)
 		{
 			int numAbilitiesInDeck = unitsInFaction.Select(unit => unit.reserveAbilityIDList.Count).Sum();
-			// Debug.LogWarning("num abilities in deck " + numAbilitiesInDeck);
+			 Debug.LogWarning("num abilities in deck " + numAbilitiesInDeck);
 			if (numAbilitiesInDeck > 0)
 			{	
 				int cardIdx = Random.Range(0, numAbilitiesInDeck);
-				// Debug.LogWarning(cardIdx);
+				 Debug.LogWarning(cardIdx);
 				int cardOwnerIdx = 0;
 				while( cardIdx >= unitsInFaction[cardOwnerIdx].reserveAbilityIDList.Count) {
 					cardIdx -= unitsInFaction[cardOwnerIdx].reserveAbilityIDList.Count;
 					++cardOwnerIdx;
 				};
 				Unit cardOwner = unitsInFaction[cardOwnerIdx];
-				// Debug.LogWarning("card owner = " + cardOwner.unitName);
-				// Debug.LogWarning("card idx = " + cardIdx + "/" + cardOwner.reserveAbilityIDList.Count);
+				Debug.LogWarning("card owner = " + cardOwner.unitName);
+				Debug.LogWarning("card idx = " + cardIdx + "/" + cardOwner.reserveAbilityIDList.Count);
 				
 				int newAbilityId = cardOwner.reserveAbilityIDList[cardIdx];
 				cardOwner.reserveAbilityIDList.RemoveAt(cardIdx);
-				cardOwner.AddAbility(newAbilityId);
+				return new AbilitySelection(cardOwner, newAbilityId);
 			}
+			return null;
 		}		
 		public bool CanCounter(Unit unit){
 			if(!GameControl.EnableCounter()) return false;

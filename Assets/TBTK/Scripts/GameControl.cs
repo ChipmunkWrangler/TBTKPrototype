@@ -183,8 +183,12 @@ namespace TBTK{
 		
 		
 		void Start () {
-			if(!FactionManager.RequireManualUnitDeployment()) StartCoroutine(DelayStartGame(0.5f));
-			else StartCoroutine(DelayUnitDeployment(0.25f)); 
+			FactionManager.ChooseInitialCards();
+		}
+
+		public static void OnFinishedCardChoice() {
+			if(!FactionManager.RequireManualUnitDeployment()) StartGame();
+			else instance.StartCoroutine(instance.DelayUnitDeployment(0.25f)); 
 		}
 		
 		//start the game, this is called after unit deployment is complete, or after initialization if no deployment is required

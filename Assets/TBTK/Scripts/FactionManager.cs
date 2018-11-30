@@ -35,7 +35,8 @@ namespace TBTK{
 		public static FactionManager GetInstance(){ return instance; }
 		public static Transform GetTransform(){ return instance!=null ? instance.transform : null ; }
 		
-		
+		public CanvasRenderer chooseInitialCardsUI = null;
+		public List<UIButton> abilitySelectionButtons = new List<UIButton>();
 		
 		void Awake(){
 			if(instance==null) instance=this;
@@ -165,7 +166,60 @@ namespace TBTK{
 				}
 			}
 		}
-		
+		public static void ChooseInitialCards() { instance.ChooseInitialCardsForNextFaction(); }
+
+		private static List<Unit.AbilitySelection> abilitySelections;
+		private int numAbilitiesChosen = 0;
+		private const int numAbilitiesToChoose = 2;
+		private int cardChoosingFactionIdx = -1;
+
+		private void ChooseInitialCardsForNextFaction() {
+			++cardChoosingFactionIdx;
+			if (cardChoosingFactionIdx < factionList.Count) {
+				Debug.LogWarning("Choosing cards for faction " + cardChoosingFactionIdx);
+				if(factionList[cardChoosingFactionIdx].isPlayerFaction){
+					// Debug.LogWarning("deck size = " + factionList[cardChoosingFactionIdx].allUnitList.Select(unit => unit.reserveAbilityIDList.Count).Sum());
+					numAbilitiesChosen = 0;
+					abilitySelections = new List<Unit.AbilitySelection>();
+					for (int i = 0; i < abilitySelectionButtons.Count; ++i)
+					{
+						// Debug.LogWarning("Choosing card  " + i);
+						Unit.AbilitySelection abilitySelection = Unit.DrawCard(factionList[cardChoosingFactionIdx].allUnitList);
+						abilitySelections.Add(abilitySelection);
+						if (abilitySelection != null){
+							// Debug.LogWarning("selection  " + abilitySelection.abilityId + " " + abilitySelection.cardOwner.unitName);
+							UnitAbility ability=AbilityManagerUnit.GetAbilityBasedOnID(abilitySelection.abilityId);
+							abilitySelectionButtons[i].Init();
+							// Debug.LogWarning("ability = " + ability.name);
+							// Debug.LogWarning(abilitySelectionButtons[i]);
+							// Debug.LogWarning(abilitySelectionButtons[i].imgIcon);
+							// Debug.LogWarning(abilitySelectionButtons[i].label);
+							abilitySelectionButtons[i].imgIcon.sprite= ability.icon;
+							abilitySelectionButtons[i].label.text = ability.GetCost().ToString();
+							abilitySelectionButtons[i].SetActive(true);	
+						}
+					}
+					chooseInitialCardsUI.gameObject.SetActive(true);
+				} else {
+					ChooseInitialCardsForNextFaction();
+				}				
+			} else {
+				chooseInitialCardsUI.gameObject.SetActive(false);
+				GameControl.OnFinishedCardChoice();
+			}
+		}
+
+		public void ChooseInitialCard(int abilitySelectionIdx) 
+		{
+			Unit.AbilitySelection abilitySelection = abilitySelections[abilitySelectionIdx];
+			abilitySelection.cardOwner.AddAbility(abilitySelection.abilityId);	
+			abilitySelectionButtons[abilitySelectionIdx].SetActive(false);		
+			++numAbilitiesChosen;
+			if (numAbilitiesChosen >= numAbilitiesToChoose) {
+				ChooseInitialCardsForNextFaction();
+			}
+		}
+
 		//called by GameControl just before the game start to initiate all the faction, after unit deployment is done
 		//sort out the unit move order, reset trigger status and what not.
 		public static void SetupFaction(){ instance._SetupFaction(); }
@@ -387,8 +441,12 @@ namespace TBTK{
 			bool isUnitActive=allUnitList[selectedUnitID].NewTurn();	//in case unit is destroyed by damage over time effect
 			if(isUnitActive){
 				// Debug.LogWarning(allUnitList[selectedUnitID].unitName + " "  + allUnitList[selectedUnitID].canDrawCards);
-				if (allUnitList[selectedUnitID].canDrawCards)
-					Unit.DrawCard(allUnitList.Where(u => u.factionID == selectedFactionID).ToList());
+				if (allUnitList[selectedUnitID].canDrawCards) {
+					Unit.AbilitySelection abilitySelection = Unit.DrawCard(allUnitList.Where(u => u.factionID == selectedFactionID).ToList());
+					if (abilitySelection != null){
+						abilitySelection.cardOwner.AddAbility(abilitySelection.abilityId);
+					}
+				}
 			} else {
 				_EndTurn_UnitPerTurn();
 				return;
